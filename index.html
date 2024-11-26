@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Cálculo 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+
+   <body>
+
+<header>
+    <img src="imagens/logo_unisagrado.png" alt="Logo do Curso" id="logo">
+    <h1>Trabalho de Cálculo 2</h1>
+    <p>Integrantes: Luan Padilha Miranda, Eduardo Marques, Kauã Limão.</p>
+</header>
+
+<div class="container">
+    <div id="lessonContent" class="lesson-content">
+        <h2 id="lessonTitle">Título da Aula</h2>
+        <img id="lessonImage" src="#" alt="Imagem da Aula">
+        <p id="lessonSummary" style="text-align: justify;">Resumo da aula será exibido aqui.</p>
+        <h3>Exercícios:</h3>
+        <ul id="lessonExercises">
+            <!-- Exercícios serão carregados aqui -->
+        </ul>
+    </div>
+
+    <div class="navigation">
+        <button id="prevLesson" onclick="navigateLesson(-1)">&#8592; Anterior</button>
+        <select id="lessonSelect" onchange="selectLesson()">
+            <!-- Opções geradas dinamicamente -->
+        </select>
+        <button id="nextLesson" onclick="navigateLesson(1)">Próxima &#8594;</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Disciplina: Cálculo: Integração com uma Variável. </p>
+</footer>
+</body>
+</html>

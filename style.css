@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #9b2a1d, #771b0b);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#logo {
+    width: 25dvw;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.lesson-content {
+    text-align: center;
+}
+
+.lesson-content h2 {
+    color: #b22222;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.lesson-content img {
+    width: 50vw;
+    height: 50vh;
+    /*max-width: 100%;*/
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.lesson-content ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.lesson-content ul li {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navigation button,
+.navigation select {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navigation button {
+    background-color: #b22222;
+    color: #fff;
+}
+
+.navigation button:hover {
+    background-color: #ff4500;
+}
+
+.navigation select {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.navigation select:focus {
+    outline: none;
+    border-color: #b22222;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #b22222, #ff4500);
+    color: #fff;
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .lesson-content h2 {
+        font-size: 2em;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation button,
+    .navigation select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
