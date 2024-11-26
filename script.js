@@ -97,7 +97,7 @@ const lessons = [
     },
     {
         "title": "Aula 9: Cálculo da Diferencial e Integrais",
-        "image": "imagens/imgemAula9.jpg",
+        "image": "imagens/imgemAula.jpg",
         "summary": "Na Aula 9, abordamos o conceito de diferencial com uma variável, que é fundamental para entender o comportamento de funções em pontos específicos. Em seguida, discutiremos as integrais indefinidas, explorando sua notação, propriedades e exemplos, com ênfase na solução em função da variável e da constante. Também falaremos sobre as integrais definidas, explicando o conceito, notação e propriedades, com destaque para a solução em termos de um valor numérico. Por fim, veremos como calcular áreas utilizando integrais definidas.",
         "exercises": [
             { 
@@ -124,7 +124,7 @@ const lessons = [
     },
     {
         "title": "Aula 10: Integrais por Integração por Partes",
-        "image": "imagens/imgemAula10.jpg",
+        "image": "imagens/imgemAula.jpg",
         "summary": "Na Aula 10, abordaremos a técnica de integração por partes, que é uma das ferramentas essenciais para integrar funções mais complexas. Vamos explorar o desenvolvimento das fórmulas básicas e como aplicá-las de forma eficaz. A integração por partes é baseada na fórmula \(\int u \, dv = uv - \int v \, du\), e em nossa aula, vamos aprender como escolher as funções \(u\) e \(dv\) para facilitar a integração de funções que não podem ser integradas diretamente. Serão discutidos exemplos práticos e desafios para aplicar essa técnica de forma eficiente.",
         "exercises": [
             { 
@@ -151,7 +151,7 @@ const lessons = [
     },
     {
         "title": "Aula 11: Integrais Definidas com a Técnica de Integração por Partes",
-        "image": "imagens/imgemAula11.jpg",
+        "image": "imagens/imgemAula.jpg",
         "summary": "Na Aula 11, abordaremos a aplicação da técnica de integração por partes em integrais definidas. Vamos explorar como adaptar a fórmula básica de integração por partes para trabalhar com limites de integração. Essa técnica se torna particularmente útil para resolver integrais de funções mais complexas, como produtos de funções algébricas, exponenciais, trigonométricas ou logaritmos. A aplicação de integrais definidas com a técnica de integração por partes é uma habilidade fundamental para resolver problemas de áreas, volumes e outros problemas aplicados.",
         "exercises": [
             { 
@@ -176,38 +176,61 @@ const lessons = [
             }
         ]
     },
+
     {
-        "title": "Aula 12: Integrais de Funções Racionais por Frações Parciais - 1º Caso",
-        "image": "imagens/imgemAula12.jpg",
-        "summary": "Na Aula 12, vamos estudar as integrais de funções racionais utilizando a técnica das frações parciais. O primeiro caso que abordaremos envolve funções racionais cujo denominador pode ser fatorado em polinômios de primeiro grau (ou irreduzíveis). O objetivo é decompor a função racional em uma soma de frações mais simples, o que permite calcular a integral de cada uma dessas frações separadamente. Essa técnica é especialmente útil para resolver integrais de funções que, de outra forma, seriam difíceis de integrar diretamente.",
+        "title": "Aula 12: Integrais de Funções Racionais por Frações Parciais",
+        "image": "imagens/imgemAula.jpg",
+        "summary": "Nesta aula, introduziremos o método de frações parciais para calcular integrais de funções racionais. O foco estará no 1º caso, que trata de funções racionais com denominadores que podem ser decompostos em fatores lineares distintos. Exploraremos a técnica de decomposição e aplicaremos os métodos básicos de integração para resolver exemplos práticos e relevantes.",
         "exercises": [
-            { 
-                "question": "∫ (1 / (x² - 1)) dx", 
-                "solution": "F(x) = (1/2) ln|x - 1| - (1/2) ln|x + 1| + C"
-            },
-            { 
-                "question": "∫ (2 / (x² - 4)) dx", 
-                "solution": "F(x) = (1/4) ln|x - 2| - (1/4) ln|x + 2| + C"
-            },
-            { 
-                "question": "∫ (3 / (x² + 2x - 3)) dx", 
-                "solution": "F(x) = (1/6) ln|x - 1| - (1/6) ln|x + 3| + C"
-            },
-            { 
-                "question": "∫ (1 / (x² + 4x + 4)) dx", 
-                "solution": "F(x) = (1/2) ln|x + 2| + C"
-            },
-            { 
-                "question": "∫ (5 / (x² - 9)) dx", 
-                "solution": "F(x) = (5/6) ln|x - 3| - (5/6) ln|x + 3| + C"
-            }
+            { "question": "∫ 1/(x(x+1)) dx.", "solution": "F(x) = ln|x| - ln|x+1| + C." },
+            { "question": "∫ (x+2)/(x²+x) dx.", "solution": "F(x) = ln|x| + ln|x+1| + C." },
+            { "question": "∫ 1/(x²-1) dx.", "solution": "F(x) = (1/2)ln|x-1| - (1/2)ln|x+1| + C." },
+            { "question": "∫ (2x+3)/(x²+x-6) dx.", "solution": "F(x) = ln|x-2| - ln|x+3| + C." },
+            { "question": "∫ 1/(x²+3x+2) dx.", "solution": "F(x) = ln|x+1| - ln|x+2| + C." }
+        ]
+    },
+
+
+    {
+        "title": "Aula 13: Integrais de Funções Racionais por Frações Parciais",
+        "image": "imagens/imgemAula.jpg",
+        "summary": "Nesta aula, vamos abordar as integrais de funções racionais utilizando o método de frações parciais, com ênfase no 2º caso. Este caso envolve funções racionais com fatores lineares repetidos no denominador. O objetivo é aprender a decompô-las em frações simples, permitindo uma integração mais direta. Serão discutidas técnicas para resolver integrais com múltiplas repetições e aplicar os resultados em problemas práticos.",
+        "exercises": [
+            { "question": "∫ 1/(x(x+1)²) dx.", "solution": "F(x) = -1/x + 1/(x+1) - 1/(x+1)² + C." },
+            { "question": "∫ 1/(x²(x+2)) dx.", "solution": "F(x) = -1/x + 1/(2x²) - ln|x+2|/2 + C." },
+            { "question": "∫ (x+1)/(x²(x+1)²) dx.", "solution": "F(x) = -1/x² + 1/x - 1/(x+1) + ln|x+1| + C." },
+            { "question": "∫ 1/(x(x²+1)) dx.", "solution": "F(x) = ln|x|/2 - arctan(x)/2 + C." },
+            { "question": "∫ x/(x²(x+1)) dx.", "solution": "F(x) = -1/(2x²) + 1/x - ln|x+1| + C." }
         ]
     },
     
-    
 
+    {
+        "title": "Aula 14: Integrais de Funções Racionais por Frações Parciais",
+        "image": "imagens/imgemAula.jpg",
+        "summary": "Nesta aula, exploraremos as integrais de funções racionais utilizando o método de frações parciais, focando no desenvolvimento e aplicação das fórmulas básicas de integração. Abordaremos especificamente o 3º e o 4º caso, que envolvem funções racionais com fatores quadráticos irredutíveis e suas potências. O objetivo é consolidar as técnicas já aprendidas e aplicá-las para resolver integrais mais complexas e desafiadoras, destacando a importância deste método em problemas avançados de cálculo.",
+        "exercises": [
+            { "question": "∫ (x + 2)/(x² + 2x + 2) dx.", "solution": "F(x) = ln(x² + 2x + 2)/2 + C." },
+            { "question": "∫ 1/(x³ + x) dx.", "solution": "F(x) = ln|x| - ln|x² + 1|/2 + C." },
+            { "question": "∫ (2x + 3)/(x² + 4x + 5) dx.", "solution": "F(x) = ln(x² + 4x + 5)/2 + C." },
+            { "question": "∫ x/(x² + 1)² dx.", "solution": "F(x) = -1/(x² + 1) + C." },
+            { "question": "∫ 1/(x² + 4) dx.", "solution": "F(x) = (1/2) arctan(x/2) + C." }
+        ]
+    },
+
+    {
+        "title": "Aula 15: Comprimento de Arco e Volume de Sólido de Revolução",
+        "image": "imagens/imgemAula.jpg",
+        "summary": "Nesta aula, exploraremos os conceitos de comprimento de arco e volume de sólido de revolução, temas fundamentais em cálculo integral. Abordaremos as fórmulas matemáticas e os métodos de integração para calcular o comprimento de curvas suaves e o volume gerado pela rotação de uma região plana em torno de um eixo. Exemplos práticos serão resolvidos para consolidar a compreensão e a aplicação dessas técnicas.",
+        "exercises": [
+            { "question": "Calcule o comprimento do arco da curva y = x³ de x = 0 até x = 1.", "solution": "F(x) = √(1 + 9x^4) dx → Comprimento = \u221a(10)/3." },
+            { "question": "Determine o volume do sólido gerado pela rotação da região delimitada por y = x² e y = 0, em torno do eixo y.", "solution": "F(x) = 2π ∫ x^3 dx → Volume = π/2." },
+            { "question": "Encontre o volume do sólido obtido pela rotação da curva y = cos(x), de x = 0 até x = π/2, em torno do eixo x.", "solution": "F(x) = π ∫ (cos(x))² dx → Volume = π/4." },
+            { "question": "Calcule o comprimento do arco da curva y = e^x, de x = 0 até x = 1.", "solution": "F(x) = √(1 + e^(2x)) dx → Comprimento = \u221a(e^2 + 1)." },
+            { "question": "Determine o volume do sólido gerado pela rotação da região delimitada por y = \u221ax e y = 0, de x = 0 até x = 1, em torno do eixo x.", "solution": "F(x) = π ∫ x dx → Volume = π/2." }
+        ]
+    }
 ];
-
 
 
 let currentLesson = 0;
