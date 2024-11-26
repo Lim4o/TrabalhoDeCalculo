@@ -94,7 +94,118 @@ const lessons = [
             { question: " ∫₀² (x² - x + 1) dx.", solution: "F(x) = 7." },
             { question: " ∫₀² (1/(x² + 1)) dx.", solution: "F(x) = π/4." }
         ]
-    }
+    },
+    {
+        "title": "Aula 9: Cálculo da Diferencial e Integrais",
+        "image": "imagens/imgemAula9.jpg",
+        "summary": "Na Aula 9, abordamos o conceito de diferencial com uma variável, que é fundamental para entender o comportamento de funções em pontos específicos. Em seguida, discutiremos as integrais indefinidas, explorando sua notação, propriedades e exemplos, com ênfase na solução em função da variável e da constante. Também falaremos sobre as integrais definidas, explicando o conceito, notação e propriedades, com destaque para a solução em termos de um valor numérico. Por fim, veremos como calcular áreas utilizando integrais definidas.",
+        "exercises": [
+            { 
+                "question": "∫(4x³ - 6x + 5) dx", 
+                "solution": "F(x) = x⁴ - 3x² + 5x + C"
+            },
+            { 
+                "question": "∫(3x² + 2x + 1) dx", 
+                "solution": "F(x) = x³ + x² + x + C"
+            },
+            { 
+                "question": "∫₀² (x² - 2x + 1) dx", 
+                "solution": "F(x) = 2"
+            },
+            { 
+                "question": "∫₀³ (x³ + x) dx", 
+                "solution": "F(x) = 24"
+            },
+            { 
+                "question": "∫₀⁰ (sin(x)) dx", 
+                "solution": "F(x) = 0"
+            }
+        ]
+    },
+    {
+        "title": "Aula 10: Integrais por Integração por Partes",
+        "image": "imagens/imgemAula10.jpg",
+        "summary": "Na Aula 10, abordaremos a técnica de integração por partes, que é uma das ferramentas essenciais para integrar funções mais complexas. Vamos explorar o desenvolvimento das fórmulas básicas e como aplicá-las de forma eficaz. A integração por partes é baseada na fórmula \(\int u \, dv = uv - \int v \, du\), e em nossa aula, vamos aprender como escolher as funções \(u\) e \(dv\) para facilitar a integração de funções que não podem ser integradas diretamente. Serão discutidos exemplos práticos e desafios para aplicar essa técnica de forma eficiente.",
+        "exercises": [
+            { 
+                "question": "∫ x e^x dx", 
+                "solution": "F(x) = x e^x - e^x + C"
+            },
+            { 
+                "question": "∫ ln(x) dx", 
+                "solution": "F(x) = x ln(x) - x + C"
+            },
+            { 
+                "question": "∫ x² cos(x) dx", 
+                "solution": "F(x) = x² sin(x) + 2x cos(x) - 2sin(x) + C"
+            },
+            { 
+                "question": "∫ e^x sin(x) dx", 
+                "solution": "F(x) = (1/2)e^x (sin(x) - cos(x)) + C"
+            },
+            { 
+                "question": "∫ x³ ln(x) dx", 
+                "solution": "F(x) = (x³ ln(x) - 3/4 x⁴) + C"
+            }
+        ]
+    },
+    {
+        "title": "Aula 11: Integrais Definidas com a Técnica de Integração por Partes",
+        "image": "imagens/imgemAula11.jpg",
+        "summary": "Na Aula 11, abordaremos a aplicação da técnica de integração por partes em integrais definidas. Vamos explorar como adaptar a fórmula básica de integração por partes para trabalhar com limites de integração. Essa técnica se torna particularmente útil para resolver integrais de funções mais complexas, como produtos de funções algébricas, exponenciais, trigonométricas ou logaritmos. A aplicação de integrais definidas com a técnica de integração por partes é uma habilidade fundamental para resolver problemas de áreas, volumes e outros problemas aplicados.",
+        "exercises": [
+            { 
+                "question": "∫₀¹ x e^x dx", 
+                "solution": "F(x) = e - 1"
+            },
+            { 
+                "question": "∫₁² x ln(x) dx", 
+                "solution": "F(x) = 2ln(2) - 1"
+            },
+            { 
+                "question": "∫₀π/2 x cos(x) dx", 
+                "solution": "F(x) = π/2"
+            },
+            { 
+                "question": "∫₀² x² e^x dx", 
+                "solution": "F(x) = 2e² - 5"
+            },
+            { 
+                "question": "∫₁³ x³ ln(x) dx", 
+                "solution": "F(x) = 27ln(3) - 45"
+            }
+        ]
+    },
+    {
+        "title": "Aula 12: Integrais de Funções Racionais por Frações Parciais - 1º Caso",
+        "image": "imagens/imgemAula12.jpg",
+        "summary": "Na Aula 12, vamos estudar as integrais de funções racionais utilizando a técnica das frações parciais. O primeiro caso que abordaremos envolve funções racionais cujo denominador pode ser fatorado em polinômios de primeiro grau (ou irreduzíveis). O objetivo é decompor a função racional em uma soma de frações mais simples, o que permite calcular a integral de cada uma dessas frações separadamente. Essa técnica é especialmente útil para resolver integrais de funções que, de outra forma, seriam difíceis de integrar diretamente.",
+        "exercises": [
+            { 
+                "question": "∫ (1 / (x² - 1)) dx", 
+                "solution": "F(x) = (1/2) ln|x - 1| - (1/2) ln|x + 1| + C"
+            },
+            { 
+                "question": "∫ (2 / (x² - 4)) dx", 
+                "solution": "F(x) = (1/4) ln|x - 2| - (1/4) ln|x + 2| + C"
+            },
+            { 
+                "question": "∫ (3 / (x² + 2x - 3)) dx", 
+                "solution": "F(x) = (1/6) ln|x - 1| - (1/6) ln|x + 3| + C"
+            },
+            { 
+                "question": "∫ (1 / (x² + 4x + 4)) dx", 
+                "solution": "F(x) = (1/2) ln|x + 2| + C"
+            },
+            { 
+                "question": "∫ (5 / (x² - 9)) dx", 
+                "solution": "F(x) = (5/6) ln|x - 3| - (5/6) ln|x + 3| + C"
+            }
+        ]
+    },
+    
+    
+
 ];
 
 
