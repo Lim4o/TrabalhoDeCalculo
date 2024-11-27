@@ -12,7 +12,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 2: Integral Indefinida",
+        title: "Aula 2: Integrais Indefinidas: conceito, notação, propriedades e exemplos do cálculo da integral indefinida.",
         image: "imagens/imgemAula.jpg",
         summary: "A integral indefinida é o processo inverso da diferenciação. Ela nos permite encontrar uma função a partir de sua derivada. Quando aplicamos a integral indefinida, buscamos uma função cuja derivada seja igual à função que estamos integrando. O conceito de constante de integração, 'C', surge porque várias funções podem ter a mesma derivada, mas com diferentes valores constantes. O cálculo de integrais indefinidas é uma ferramenta poderosa para resolver problemas de áreas e volumes e para modelar fenômenos contínuos. A integral é essencial não só no estudo da geometria, mas também em várias áreas aplicadas, como a física e a engenharia, onde usamos integrais para calcular o trabalho realizado por uma força ou para determinar a área sob uma curva. Em problemas de física, por exemplo, a integral indefinida é usada para calcular o deslocamento a partir da velocidade de um objeto, enquanto em economia, ela pode ser usada para calcular a área entre a curva de oferta e demanda.",
         exercises: [
@@ -24,7 +24,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 3: Integrais Indefinidas 2",
+        title: "Aula 3: Conceito, Notação e Exemplos de Integrais Indefinidas",
         image: "imagens/imgemAula.jpg",
         summary: "Nesta aula, vimos técnicas mais avançadas para resolver integrais indefinidas. Quando as funções a serem integradas não podem ser diretamente integradas com as fórmulas básicas, utilizamos métodos como a substituição e a integração por partes. A substituição envolve a mudança de uma variável para simplificar a integral, enquanto a integração por partes é baseada na regra do produto da diferenciação. Essas técnicas ajudam a resolver integrais mais complexas, frequentemente encontradas em problemas práticos de cálculo. Além disso, a técnica de integração por partes é especialmente útil em problemas envolvendo produtos de funções, como o cálculo de integrais de funções exponenciais multiplicadas por polinômios, e a substituição é crucial quando lidamos com integrais que envolvem funções compostas, como as integrais de funções trigonométricas ou racionais.",
         exercises: [
@@ -36,7 +36,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 4: Integrais Indefinidas 3",
+        title: "Aula 4: Exemplos e Exercícios de Integrais Indefinidas: Aprofundamento",
         image: "imagens/imgemAula.jpg",
         summary: "Neste estágio, vamos abordar integrais de funções racionais e técnicas avançadas para resolver integrais envolvendo frações algébricas, como a decomposição em frações parciais. Essa técnica é essencial para resolver integrais de funções racionais que não podem ser diretamente integradas. Além disso, vamos aplicar essas técnicas para resolver integrais de funções que envolvem raízes quadradas ou expressões trigonométricas, aumentando nossa capacidade de resolver problemas mais complexos. Vamos também trabalhar com integrais envolvendo expressões algébricas mais difíceis de manipular, como frações com denominadores polinomiais de grau superior e raízes quadradas. Esse aprendizado permitirá resolver problemas de cálculo mais complexos em várias disciplinas, como física, engenharia e economia.",
         exercises: [
@@ -48,7 +48,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 5: Integrais Definidas",
+        title: "Aula 5: Conceito, Propriedades e Exemplos de Integrais Definidas",
         image: "imagens/imgemAula.jpg",
         summary: "A integral definida é usada para calcular a área sob a curva de uma função em um intervalo específico. Ao aplicar limites de integração, podemos determinar a área entre a curva e o eixo x entre dois valores. Este conceito é utilizado em diversas áreas da matemática e da física, especialmente em problemas envolvendo áreas, volumes e a soma de infinitos pequenos elementos. Vamos explorar o teorema fundamental do cálculo, que conecta a diferenciação com a integração, e como utilizá-lo para resolver problemas práticos envolvendo integrais definidas. Essa aula será crucial para entender as aplicações de integrais em cenários como o cálculo de trabalho, deslocamento e a determinação de áreas sob curvas.",
         exercises: [
@@ -60,7 +60,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 6: Integrais Definidas 2",
+        title: "Aula 6: Aprofundamento em Integrais Definidas: Conceito e Exemplos",
         image: "imagens/imgemAula.jpg",
         summary: "Continuamos com o estudo das integrais definidas, agora com funções mais complexas e com a aplicação do Teorema Fundamental do Cálculo, que estabelece a conexão entre derivadas e integrais. Essa conexão é fundamental para o entendimento profundo de como as integrais podem ser usadas para resolver problemas práticos e teóricos. Vamos explorar integrais com limites variáveis e aplicar o Teorema Fundamental do Cálculo para calcular áreas e volumes com maior precisão. Através de exemplos, vamos trabalhar como usar este teorema para resolver integrais definidas em uma ampla gama de funções.",
         exercises: [
@@ -72,7 +72,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 7: Integrais Definidas 3",
+        title: "Aula 7: Conceito e Exemplos de Integrais Definidas: Cálculo de Área",
         image: "imagens/imgemAula.jpg",
         summary: "Nesta aula, exploraramos mais integrais definidas utilizando diferentes técnicas de cálculo, incluindo métodos mais avançados e a resolução de problemas aplicados, como o cálculo de áreas em formas irregulares e a aplicação em física. Vamos ver como aplicar substituições e decomposições para lidar com integrais mais difíceis e interpretar o significado físico por trás dos cálculos. Com isso, o aluno será capaz de resolver integrais com funções mais complexas de forma mais eficiente e precisa.",
         exercises: [
@@ -84,7 +84,7 @@ const lessons = [
         ]
     },
     {
-        title: "Aula 8: Integrais Definidas 4",
+        title: "Aula 8: Conceito e Exemplos de Integrais Definidas: Cálculo de Área entre Curvas",
         image: "imagens/imgemAula.jpg",
         summary: "Na última parte sobre integrais definidas, abordaremos integrais com funções ainda mais complexas e a aplicação de métodos avançados de integração. Vamos revisar e aplicar as técnicas adquiridas ao longo do curso para resolver integrais difíceis e explorar novas maneiras de interpretar o resultado dos cálculos. A aplicação de funções trigonométricas, exponenciais e outras funções não elementares será discutida em profundidade, culminando com problemas complexos que podem ser resolvidos de forma eficiente com os métodos estudados nas aulas anteriores.",
         exercises: [
@@ -221,15 +221,31 @@ const lessons = [
     {
         "title": "Aula 15: Comprimento de Arco e Volume de Sólido de Revolução",
         "image": "imagens/imgemAula.jpg",
-        "summary": "Nesta aula, exploraremos os conceitos de comprimento de arco e volume de sólido de revolução, temas fundamentais em cálculo integral. Abordaremos as fórmulas matemáticas e os métodos de integração para calcular o comprimento de curvas suaves e o volume gerado pela rotação de uma região plana em torno de um eixo. Exemplos práticos serão resolvidos para consolidar a compreensão e a aplicação dessas técnicas.",
+        "summary": "Nesta aula, vamos explorar dois importantes tópicos do cálculo integral: o cálculo do comprimento de curvas (ou arco) e o volume de sólidos de revolução. Abordaremos as fórmulas gerais e as técnicas para aplicá-las, resolvendo exemplos práticos. O objetivo é compreender como calcular a extensão de uma curva e determinar volumes gerados pela rotação de funções em torno de eixos coordenados.",
         "exercises": [
-            { "question": "Calcule o comprimento do arco da curva y = x³ de x = 0 até x = 1.", "solution": "F(x) = √(1 + 9x^4) dx → Comprimento = \u221a(10)/3." },
-            { "question": "Determine o volume do sólido gerado pela rotação da região delimitada por y = x² e y = 0, em torno do eixo y.", "solution": "F(x) = 2π ∫ x^3 dx → Volume = π/2." },
-            { "question": "Encontre o volume do sólido obtido pela rotação da curva y = cos(x), de x = 0 até x = π/2, em torno do eixo x.", "solution": "F(x) = π ∫ (cos(x))² dx → Volume = π/4." },
-            { "question": "Calcule o comprimento do arco da curva y = e^x, de x = 0 até x = 1.", "solution": "F(x) = √(1 + e^(2x)) dx → Comprimento = \u221a(e^2 + 1)." },
-            { "question": "Determine o volume do sólido gerado pela rotação da região delimitada por y = \u221ax e y = 0, de x = 0 até x = 1, em torno do eixo x.", "solution": "F(x) = π ∫ x dx → Volume = π/2." }
+            { 
+                "question": "∫₁⁴ √(1 + (1/(2√x))²) dx", 
+                "solution": "L = ∫₁⁴ √(1 + (1/(2√x))²) dx = ∫₁⁴ √(1 + 1/(4x)) dx. Resolvido, L ≈ 3.478." 
+            },
+            { 
+                "question": "π ∫₀¹ (x²)² dx", 
+                "solution": "V = π ∫₀¹ (x²)² dx = π ∫₀¹ x⁴ dx = π[x⁵/5]₀¹ = π/5." 
+            },
+            { 
+                "question": "∫₁ᵉ √(1 + (1/x)²) dx", 
+                "solution": "L = ∫₁ᵉ √(1 + (1/x)²) dx = ∫₁ᵉ √(1 + 1/x²) dx ≈ 1.725." 
+            },
+            { 
+                "question": "π ∫₀⁴ (√x)² dx", 
+                "solution": "V = π ∫₀⁴ (√x)² dx = π ∫₀⁴ x dx = π[x²/2]₀⁴ = 8π." 
+            },
+            { 
+                "question": "2π ∫₀² x³x dx", 
+                "solution": "V = 2π ∫₀² x³x dx = 2π ∫₀² x⁴ dx = 2π[x⁵/5]₀² = 64π/5." 
+            }
         ]
     }
+    
 ];
 
 
