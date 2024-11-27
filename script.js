@@ -1,5 +1,10 @@
 const lessons = [
     {
+        "title": "Resumo",
+        "image": "imagens/resumocalculo.png",
+        "summary": "O Cálculo 2 é uma disciplina essencial que aprofunda o estudo do Cálculo Diferencial e Integral, com foco em integrais, séries e suas aplicações. Este resumo aborda os principais conceitos, propriedades e métodos de integração, explorando integrais indefinidas e definidas, além de técnicas avançadas como frações parciais e integrais por partes. A integração é crucial para resolver problemas envolvendo áreas, volumes e modelagem de fenômenos físicos e matemáticos. As integrais indefinidas são utilizadas para encontrar a antiderivada de funções, resultando em uma família de soluções expressa em função da constante de integração \(C\). Já as integrais definidas são usadas para calcular áreas sob curvas, e o Teorema Fundamental do Cálculo facilita a avaliação de integrais com limites. O estudo de técnicas de integração, como substituição trigonométrica, frações parciais e integração por partes, permite resolver problemas mais complexos. As aplicações de Cálculo 2 incluem o cálculo de comprimento de arco, volumes de sólidos de revolução e áreas entre curvas, sendo amplamente utilizado em física, engenharia e ciências computacionais."
+    },
+    {
         title: "Aula 1: Cálculo da Diferencial com uma variável",
         image: "imagens/imgemAula.jpg",
         summary: "O cálculo da diferencial em funções de uma variável trata do estudo das taxas de variação de uma função quando a variável independente sofre pequenas alterações. A operação principal desse estudo é a derivada, que nos fornece a taxa de variação instantânea de uma função em relação a uma de suas variáveis. Para entender melhor, a diferencial de uma função em um ponto é uma aproximação linear do comportamento da função em torno desse ponto. Essa aproximação é crucial para entender como pequenas variações em um valor de entrada afetam o resultado da função. Matematicamente, a diferencial é expressa como 𝑑 𝑓 ( 𝑥 ) = 𝑓 ′ ( 𝑥 ) 𝑑 𝑥 df(x)=f ′ (x)dx, onde 𝑓 ′ ( 𝑥 ) f ′ (x) é a derivada da função em um ponto 𝑥 x e 𝑑 𝑥 dx representa uma pequena variação na variável independente. A diferencial é usada para estimar mudanças pequenas e aproximar comportamentos de funções complexas em pontos específicos. Além disso, a diferenciação e a utilização de diferenciais são essenciais para o estudo do comportamento local de funções, sendo amplamente aplicada em diversas áreas, como física, economia, biologia, e engenharia. Por exemplo, na física, as diferenciais são fundamentais para entender como a velocidade de um objeto muda com o tempo (derivada da posição em relação ao tempo), ou em economia, para calcular como uma pequena variação no preço de um bem pode influenciar a demanda. Essa aula proporciona os fundamentos para a análise de funções e sua taxa de variação instantânea, o que permite ao aluno calcular o impacto de variações pequenas em uma variável independente em diferentes contextos.",
@@ -244,7 +249,7 @@ const lessons = [
                 "solution": "V = 2π ∫₀² x³x dx = 2π ∫₀² x⁴ dx = 2π[x⁵/5]₀² = 64π/5." 
             }
         ]
-    }
+    },
     
 ];
 
