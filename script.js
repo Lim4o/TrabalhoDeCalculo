@@ -892,7 +892,6 @@ const lessonImage = document.getElementById("lessonImage");
 const lessonSummary = document.getElementById("lessonSummary");
 const lessonExercises = document.getElementById("lessonExercises");
 const lessonSelect = document.getElementById("lessonSelect");
-const AplicationImage = document.getElementById("AplicationImage");
 
 function loadLessonOptions() {
     lessons.forEach((lesson, index) => {
