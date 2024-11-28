@@ -63,7 +63,7 @@ const lessons = [
     },
     {
         "title": "Aula 2: Conceito e Exemplos de Integrais Indefinidas.",
-        "image": "imagens/resumocalculo.png",
+        "image": "imagens/aula2.png",
         "summary": "A integral indefinida é o processo inverso da diferenciação. Ela nos permite encontrar uma função a partir de sua derivada. Quando aplicamos a integral indefinida, buscamos uma função cuja derivada seja igual à função que estamos integrando. O conceito de constante de integração, 'C', surge porque várias funções podem ter a mesma derivada, mas com diferentes valores constantes. O cálculo de integrais indefinidas é uma ferramenta poderosa para resolver problemas de áreas e volumes e para modelar fenômenos contínuos. A integral é essencial não só no estudo da geometria, mas também em várias áreas aplicadas, como a física e a engenharia, onde usamos integrais para calcular o trabalho realizado por uma força ou para determinar a área sob uma curva. Em problemas de física, por exemplo, a integral indefinida é usada para calcular o deslocamento a partir da velocidade de um objeto, enquanto em economia, ela pode ser usada para calcular a área entre a curva de oferta e demanda.",
         "exercises": [
             {
@@ -937,8 +937,10 @@ function navigateLesson(direction) {
     const newIndex = currentLesson + direction;
     if (newIndex >= 0 && newIndex < lessons.length) {
         loadLesson(newIndex);
+        window.scrollTo(0, 0);
     }
 }
+
 
 function selectLesson() {
     const selectedLesson = parseInt(lessonSelect.value);
