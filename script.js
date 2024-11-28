@@ -59,7 +59,11 @@ const lessons = [
                 ],
                 "solution": "df(x) = \\cos(x) dx."
             }
-        ]
+        ],
+        "aplication" : `<center><h3>Aplicação</h3></center>
+        
+        Com o cálculo diferencial, é possível determinar a velocidade instantânea** de um objeto, analisando a taxa de variação da posição em relação ao tempo. Por exemplo, dado o movimento de um carro, a derivada da função posição fornece a velocidade em qualquer instante específico.
+        `,
     },
     {
         "title": "Aula 2: Conceito e Exemplos de Integrais Indefinidas.",
@@ -108,7 +112,15 @@ const lessons = [
                 ],
                 "solution": "F(x) = ln|x| + C."
             }
-        ]
+        ],
+        "aplication" : `<center><h3>Aplicação</h3></center>
+
+        As integrais indefinidas possuem aplicações fundamentais na física, engenharia e outras áreas científicas, especialmente para modelar fenômenos dinâmicos. Por exemplo, ao determinar a posição de um objeto em movimento, a integral da função velocidade fornece a expressão geral da posição, incluindo informações sobre as condições iniciais.
+        
+        Da mesma forma, em engenharia, as integrais são usadas para calcular forças acumuladas em estruturas, enquanto na economia ajudam a prever funções de custo ou receita cumulativa a partir de taxas de variação conhecidas.
+        
+        Essa técnica é essencial para resolver problemas que envolvem a recuperação de funções originais a partir de suas taxas de variação observadas.`,
+        
     },
     {
         "title": "Aula 3: Conceito, Notação e Exemplos de Integrais Indefinidas",
@@ -163,7 +175,13 @@ const lessons = [
                 ],
                 "solution": "\(F(x) = (x + sin(x)cos(x))/2 + C\)"
             }
-        ]
+        ],
+        "aplication" : `
+        <center><h3>Aplicação</h3></center>
+
+        O cálculo diferencial permite analisar o movimento de objetos, determinando grandezas como velocidade e aceleração instantâneas. Por exemplo, ao modelar o movimento de um carro, a função posição \( s(t) \), que relaciona a posição ao tempo \( t \), pode ser derivada para obter a velocidade \( s'(t) \) em um instante específico. A segunda derivada, \( s''(t) \), fornece a aceleração, ajudando a entender como o movimento está mudando ao longo do tempo. Essa análise é essencial em áreas como engenharia automotiva e física.
+
+        `,
     },   
     {
         "title": "Aula 4: Exemplos e Exercícios de Integrais Indefinidas: Aprofundamento",
@@ -213,7 +231,14 @@ const lessons = [
                 ],
                 "solution": "F(x) = -1/x + C."
             }
-        ]
+        ],
+        "aplication" : `<center><h3>Aplicação</h3></center>
+        
+
+    A integral indefinida é uma ferramenta fundamental para resolver problemas que envolvem encontrar funções primitivas ou determinar funções desconhecidas a partir de suas taxas de variação. Por exemplo, ao analisar o movimento de uma partícula, se conhecemos a velocidade \( v(t) \) em função do tempo \( t \), a posição \( s(t) \) pode ser encontrada integrando \( v(t) \).  
+
+    Outra aplicação relevante está em situações de crescimento ou decaimento exponencial, onde, dada a taxa de crescimento \( f'(x) \), pode-se determinar a função original \( f(x) \) que descreve o comportamento do sistema. Essas técnicas são amplamente empregadas na modelagem de fenômenos em engenharia, economia e ciências naturais.
+        `,
     },
     {
         "title": "Aula 5: Conceito, Propriedades e Exemplos de Integrais Definidas",
@@ -261,7 +286,9 @@ const lessons = [
                 ],
                 "solution": "F(x) = [(1/3)x³ + x]₀² = 10/3."
             }
-        ]
+        ],
+        "aplication" : `<center><h3>Aplicação</h3></center>
+        A integral definida é amplamente utilizada para calcular áreas, volumes e totais acumulados em diversos contextos. Por exemplo, ao calcular a área sob uma curva, a integral definida fornece o valor acumulado entre os limites de integração. Em física, pode ser usada para determinar a quantidade de trabalho realizado por uma força ao longo de uma distância ou para calcular o movimento de objetos sob aceleração variável. Em engenharia, é fundamental para o cálculo de momentos de inércia e para determinar o volume de sólidos com formas complexas. Além disso, integrais definidas são essenciais em economia para calcular receitas, custos e outras grandezas acumulativas ao longo do tempo.`,
     },
     {
         "title": "Aula 6: Aprofundamento em Integrais Definidas: Conceito e Exemplos",
@@ -320,7 +347,9 @@ const lessons = [
                 ],
                 "solution": "F(x) = \\frac{\\pi}{2}."
             }
-        ]
+        ],
+        "aplication" : `<center><h3>Aplicação</h3></center> 
+        O aprofundamento em integrais definidas é essencial para entender como essas ferramentas podem ser aplicadas em problemas complexos em diversas áreas. Em física, por exemplo, a integral definida é usada para calcular a quantidade de trabalho realizado por uma força ao longo de um deslocamento, ou a energia potencial em um sistema de partículas. Em engenharia, as integrais definidas são fundamentais para o cálculo de momentos de inércia e áreas de materiais com formas irregulares. Na economia, elas ajudam a modelar fluxos de receitas e custos ao longo do tempo, permitindo a análise de fenômenos como o crescimento de investimentos ou a previsão de demanda de produtos. Esse aprofundamento também é usado em biologia para modelar o crescimento populacional, e em estatística, para calcular probabilidades em distribuições contínuas.`,
     },
     {
         "title": "Aula 7: Conceito e Exemplos de Integrais Definidas: Cálculo de Área",
@@ -372,8 +401,10 @@ const lessons = [
                 ],
                 "solution": "F(x) = 2."
             }
-        ]
+        ],
+         "aplication": "<center><h3>Aplicação</h3></center>\n\nO cálculo de área utilizando integrais definidas é um conceito fundamental em cálculo. Ele nos permite calcular a área sob uma curva, que é representada pela integral definida de uma função no intervalo \\([a, b]\\). Este método é amplamente utilizado em várias disciplinas, como geometria, física e economia. \n\nEm geometria, o cálculo da área sob a curva de uma função \\( f(x) \\) no intervalo \\([a, b]\\) é dado pela integral \\( A = \\int_{a}^{b} f(x) \\: dx \\), que nos fornece a área entre a curva e o eixo \\(x\\). Essa técnica é essencial para resolver problemas envolvendo áreas irregulares, como o cálculo da área de uma superfície ou de uma região delimitada por gráficos de funções. \n\nAlém disso, na física, esse conceito é usado para calcular o trabalho realizado por uma força, já que o trabalho é a integral da força ao longo de um deslocamento. Na economia, as integrais definidas são empregadas para calcular o total de receitas ou custos acumulados ao longo de um período. Dessa forma, a integral definida é uma ferramenta crucial para resolver problemas de área em diversas áreas do conhecimento.<br><br>"
     },
+    
     {
         "title": "Aula 8: Conceito e Exemplos de Integrais Definidas: Cálculo de Área entre Curvas",
         "image": "imagens/aula8.png",
@@ -429,7 +460,8 @@ const lessons = [
                 ],
                 "solution": "F(x) = \\frac{\\pi}{4}."
             }
-        ]
+        ],
+        "aplication": "<center><h3>Aplicação</h3></center>\n\nO cálculo de áreas entre curvas é uma das aplicações mais importantes das integrais definidas. Ele é usado para determinar a área limitada entre duas funções em um intervalo específico. Este processo é essencial em várias áreas da ciência e engenharia, como a física, onde pode ser utilizado para calcular a área de regiões representadas por gráficos de funções de movimento, como a distância percorrida por um objeto em um determinado intervalo de tempo. \n\nPor exemplo, a integral definida \\( \\int_{a}^{b} [f(x) - g(x)] \\: dx \\) calcula a área entre as curvas \\( y = f(x) \\) e \\( y = g(x) \\) no intervalo \\([a, b]\). Esse conceito também é aplicado em economia para calcular o lucro ou a receita gerada entre dois pontos de um gráfico de função de lucro. Além disso, é fundamental para o design e a análise de formas em engenharia, como o cálculo da área de uma seção transversal de uma estrutura, onde as curvas representam diferentes perfis da forma desejada. Assim, a integral definida oferece uma ferramenta poderosa para resolver uma ampla gama de problemas práticos.<br><br>"
     },
     {
         "title": "Aula 9: Cálculo da Diferencial e Integrais",
@@ -486,9 +518,10 @@ const lessons = [
                 ],
                 "solution": "F(x) = 0"
             }
-        ]
+        ],
+        "aplication" : `<center><h3>Aplicação</h3></center>
+        O estudo das integrais e diferenciais tem uma ampla gama de aplicações em várias áreas do conhecimento. Em física, a diferencial é usada para modelar variações instantâneas, como velocidade e aceleração de partículas, enquanto as integrais são aplicadas no cálculo de trabalho, energia e movimento de corpos. Em engenharia, as integrais ajudam a calcular áreas de materiais, volumes de objetos e momentos de inércia, enquanto as diferenciais são usadas para descrever o comportamento de sistemas dinâmicos e otimizar processos. Na economia, o cálculo diferencial é essencial para determinar taxas de crescimento e maximizar lucros, enquanto a integral é usada para calcular o valor presente de fluxos de caixa e a análise de investimentos ao longo do tempo. Além disso, em biologia, esses cálculos são aplicados para modelar o crescimento de populações e processos de difusão, e em estatística, eles são cruciais para a análise de distribuições de probabilidades e modelagem de dados contínuos.<br>`,
     },
-    //Fazer o mesmo para as proximas.
     {
         "title": "Aula 10: Integrais por Integração por Partes",
         "image": "imagens/aula10.png",
@@ -552,7 +585,22 @@ const lessons = [
                 ],
                 "solution": "F(x) = (x³ ln(x) - 3/4 x⁴) + C"
             }
-        ]
+        ],
+        "aplication": `
+        <center><h3>Aplicação</h3></center>
+
+        A técnica de integração por partes é amplamente utilizada para resolver integrais de produtos de funções, especialmente em problemas envolvendo física, economia e engenharia. Ela permite transformar integrais complexas em formas mais simples, tornando-a uma ferramenta essencial em várias disciplinas.
+
+        <ul>
+            <li><br>Física: Cálculo de Trabalho e Energia:** A integração por partes é usada para calcular o trabalho realizado por forças variáveis. Por exemplo, ao calcular a energia produzida por uma força que varia com a posição, a técnica é aplicada para resolver integrais envolvendo produtos de força e deslocamento.</li>
+            <li><b>Engenharia Elétrica: Cálculo de Correntes e Tensões:</b> Em circuitos elétricos, onde a corrente e a tensão variam com o tempo, a integração por partes pode ser utilizada para resolver integrais envolvendo produtos de funções exponenciais e trigonométricas, comuns em circuitos RLC e sistemas de resposta de sinais.</li>
+            <li><b>Economia: Cálculo de Custo e Lucro:</b> A técnica é útil em economia para modelar a mudança de variáveis relacionadas ao lucro ou custo ao longo do tempo. Quando essas variáveis são funções de crescimento exponencial e polinomial, a integração por partes ajuda a calcular o valor presente de fluxos financeiros ou o valor acumulado ao longo do tempo.</li>
+            <li><b>Probabilidade e Estatística: Distribuições de Probabilidade:</b> A integração por partes é utilizada na determinação de momentos de distribuições probabilísticas, como a esperança matemática e variância de distribuições contínuas. Essas distribuições são frequentemente modeladas por produtos de funções, tornando a técnica indispensável.</li>
+        </ul>
+
+        Essa técnica facilita o cálculo de integrais complexas, especialmente quando as funções integradas são produtos de polinômios, exponenciais ou funções trigonométricas, sendo amplamente aplicada em diversas áreas científicas e industriais.
+        <br><br>
+        `
     },
     
     {
@@ -620,7 +668,8 @@ const lessons = [
                 ],
                 "solution": "F(x) = 27ln(3) - 45"
             }
-        ]
+        ],
+        "aplication": "<center><h3>Aplicação</h3></center>\n\nA técnica de integração por partes é amplamente utilizada em problemas de física e engenharia, especialmente para modelar fenômenos que envolvem produtos de funções, como o cálculo de trabalho realizado por uma força que varia com o tempo ou a energia armazenada em sistemas oscilatórios. Um exemplo típico é o cálculo de momentos de inércia em mecânica ou a análise de circuitos elétricos envolvendo funções exponenciais e trigonométricas. A técnica também é essencial na solução de integrais de funções em física quântica, onde a integração por partes pode simplificar expressões complexas e fornecer resultados mais gerenciáveis. <br><br>"
     },
     
 
@@ -688,10 +737,22 @@ const lessons = [
                 ],
                 "solution": "F(x) = ln|x+1| - ln|x+2| + C."
             }
-        ]
-    },
-    
+        ],
+        "aplication": `
+        <center><h3>Aplicação</h3></center>
 
+        A técnica de integrais de funções racionais por frações parciais é amplamente utilizada na análise de sistemas de controle, especialmente na modelagem e no estudo de sistemas dinâmicos e sua resposta a entradas específicas, como em automação e robótica.
+
+        <ul>
+            <li><br>Análise de Resposta de Sistemas Dinâmicos:</br>Em sistemas de controle, funções racionais modelam a relação entre entrada e saída de um sistema. Frações parciais são usadas para calcular a resposta no domínio do tempo, como o comportamento de um sistema após uma perturbação.</li>
+            <li><br>Controle de Processos Industriais:</br>Em processos industriais como a produção de produtos químicos ou a fabricação de semicondutores, as funções racionais representam a dinâmica dos processos, e as frações parciais ajudam a calcular a resposta do sistema a mudanças nas variáveis de controle.</li>
+            <li><br>Modelagem de Sistemas Mecânicos:</br> No estudo de sistemas mecânicos, como veículos ou máquinas automatizadas, as frações parciais facilitam a análise de vibrações e forças atuantes, que são representadas por funções racionais da frequência.</li>
+        </ul>
+
+        Esta abordagem é fundamental para o design e otimização de sistemas de controle modernos, garantindo estabilidade, precisão e eficiência nas operações automáticas e industriais.
+        <br><br>
+        `
+    },
     {
         "title": "Aula 13: Integrais de Funções Racionais por Frações Parciais",
         "image": "imagens/aula13.png",
@@ -753,11 +814,24 @@ const lessons = [
                 ],
                 "solution": "F(x) = -1/(2x²) + 1/x - ln|x+1| + C."
             }
-        ]
-    },
-       
-    
+        ],
+        "aplication": `
+        <center><h3>Aplicação</h3></center>
 
+        As integrais de funções racionais por frações parciais são essenciais na análise de sinais em telecomunicações. Um exemplo prático é na modulação e demodulação de sinais de rádio ou na análise de filtros de frequência. 
+
+        <ul>
+            <li<b>Filtragem de Sinais:</b> Em sistemas de comunicação, frações parciais são usadas para decompor funções racionais que representam respostas de filtros passa-baixa, passa-alta e passa-banda.</li>
+            <li<b>Transmissão Digital:</b> Na análise de sinais transmitidos e recebidos, a transformada inversa de Laplace, com a ajuda de frações parciais, facilita a análise de sinais modulados em diferentes bandas de frequência.</li>
+            <li<b>Análise de Interferências:</b> Frações parciais permitem estudar como ruídos ou interferências afetam sinais, otimizando o design de sistemas para reduzir perdas ou distorções.</li>
+        </ul>
+
+        Essa técnica é fundamental para garantir uma comunicação clara e eficiente, sendo aplicada no desenvolvimento de tecnologias como Wi-Fi, 4G/5G e sistemas de radar.  
+
+        <br><br>
+
+        `
+    },
     {
         "title": "Aula 14: Integrais de Funções Racionais por Frações Parciais",
         "image": "imagens/aula14.png",
@@ -816,71 +890,85 @@ const lessons = [
                 ],
                 "solution": "F(x) = (1/2) arctan(x/2) + C."
             }
-        ]
-    },
-    
-
-    {
-        "title": "Aula 15: Comprimento de Arco e Volume de Sólido de Revolução",
-        "image": "imagens/aula15.png",
-        "summary": "Nesta aula, vamos explorar dois importantes tópicos do cálculo integral: o cálculo do comprimento de curvas (ou arco) e o volume de sólidos de revolução. Abordaremos as fórmulas gerais e as técnicas para aplicá-las, resolvendo exemplos práticos. O objetivo é compreender como calcular a extensão de uma curva e determinar volumes gerados pela rotação de funções em torno de eixos coordenados.",
-        "exercises": [
-            { 
-                "question": "∫₁⁴ √(1 + (1/(2√x))²) dx", 
-                "steps": [
-                    "A fórmula para o comprimento de arco é dada por: L = ∫ aᵇ √(1 + (f'(x))²) dx.",
-                    "Neste caso, temos a função f(x) = √x, então f'(x) = 1/(2√x).",
-                    "Substituindo na fórmula: L = ∫₁⁴ √(1 + (1/(2√x))²) dx.",
-                    "Simplificando a expressão: L = ∫₁⁴ √(1 + 1/(4x)) dx.",
-                    "Agora, resolve-se a integral numericamente: L ≈ 3.478."
-                ],
-                "solution": "L ≈ 3.478"
-            },
-            {   
-                "question": "ovπ ∫₀¹ (x²)² dx", 
-                "steps": [
-                    "Primeiro, expandimos (x²)² para x⁴.",
-                    "A fórmula para o volume de um sólido de revolução em torno do eixo x é dada por: V = π ∫ aᵇ (f(x))² dx.",
-                    "Substituindo, temos V = π ∫₀¹ x⁴ dx.",
-                    "Agora, integramos: π ∫₀¹ x⁴ dx = π[x⁵/5]₀¹.",
-                    "Substituindo os limites de integração: V = π/5."
-                ],
-                "solution": "V = π/5"
-            },
-            { 
-                "question": "∫₁ᵉ √(1 + (1/x)²) dx", 
-                "steps": [
-                    "A fórmula para o comprimento de arco é L = ∫₁ᵉ √(1 + (f'(x))²) dx.",
-                    "Aqui, f(x) = 1/x, então f'(x) = -1/x².",
-                    "Substituímos na fórmula: L = ∫₁ᵉ √(1 + (1/x)²) dx.",
-                    "Agora, resolve-se a integral numericamente: L ≈ 1.725."
-                ],
-                "solution": "L ≈ 1.725"
-            },
-            { 
-                "question": "π ∫₀⁴ (√x)² dx", 
-                "steps": [
-                    "Primeiro, simplificamos (√x)² para x.",
-                    "Agora, aplicamos a fórmula do volume de sólido de revolução: V = π ∫₀⁴ x dx.",
-                    "Integramos: π ∫₀⁴ x dx = π[x²/2]₀⁴.",
-                    "Substituindo os limites de integração: V = 8π."
-                ],
-                "solution": "V = 8π"
-            },
-            { 
-                "question": "2π ∫₀² x³ dx", 
-                "steps": [
-                    "A fórmula do volume é V = 2π ∫₀² x³ dx.",
-                    "Integramos: 2π ∫₀² x³ dx = 2π[x⁴/4]₀².",
-                    "Substituímos os limites de integração: V = 8π."
-                ],
-                "solution": "V = 8π"
-            },
-
         ],
-        
-    }
-    
+        "aplication": `
+        <center><h3>Aplicação</h3></center>
+
+            As integrais de funções racionais por frações parciais têm diversas aplicações práticas em problemas do mundo real. Essa técnica é usada para simplificar cálculos em áreas como engenharia, economia e ciências naturais. Ela permite resolver problemas complexos ao dividir funções racionais em termos mais simples e manejáveis.
+
+            <ul>
+                <li><b>Análise de Circuitos Elétricos:</b> Em engenharia elétrica, as frações parciais ajudam a resolver integrais que aparecem na análise de correntes e tensões em circuitos RLC (resistores, indutores e capacitores), especialmente em transformadas inversas de Laplace.</li>
+                <li><b>Modelagem Econômica:</b> Na economia, funções racionais são usadas para modelar sistemas com limites de crescimento ou declínio, como o impacto de uma política fiscal ao longo do tempo. A decomposição por frações parciais simplifica a análise de taxas acumuladas.</li>
+                <li><b>Dinâmica de Fluidos:</b>  Em engenharia mecânica, as frações parciais auxiliam na análise de vazões em sistemas de tubulação complexos, onde o fluxo é modelado por funções racionais representando resistência e pressão.</li>
+                <li><b>Farmacologia:</b>  No estudo da cinética de medicamentos, funções racionais aparecem ao modelar a absorção e eliminação de substâncias no corpo. Frações parciais ajudam a determinar a concentração do medicamento em diferentes instantes de tempo.</li>
+            </ul>
+
+            Essa técnica é indispensável para simplificar problemas, economizando tempo e recursos em cálculos complexos.
+            <br><br>
+
+        ` },
+{
+    "title": "Aula 15: Integrais Impróprias e Limites Infinitos",
+    "image": "imagens/aula15.png",
+    "summary": "Nesta aula, abordaremos as integrais impróprias, que são aquelas em que os limites de integração envolvem infinitos ou a função integrada apresenta uma descontinuidade no intervalo de integração. Serão explorados os conceitos de limites infinitos e integrais com intervalos infinitos. A aula também tratará da convergência e divergência das integrais impróprias, discutindo como avaliar essas integrais através de limites.",
+    "exercises": [
+        {
+            "question": "\\int_{1}^{\\infty} \\frac{1}{x^2} \\: dx",
+            "steps": [
+                "A função \\( \\frac{1}{x^2} \\) é contínua no intervalo \\([1, \\infty)\\), então podemos aplicar o limite para a integral imprópria.",
+                "Escreva a integral como um limite: \\( \\int_{1}^{\\infty} \\frac{1}{x^2} \\: dx = \\lim_{b \\to \\infty} \\int_{1}^{b} \\frac{1}{x^2} \\: dx \\).",
+                "Integre \\( \\frac{1}{x^2} \\) usando a regra da potência: \\( \\int x^{-2} \\: dx = -x^{-1} \\).",
+                "A integral se torna \\( \\left[- \\frac{1}{x} \\right]_{1}^{b} = - \\frac{1}{b} + 1 \\).",
+                "Agora, aplique o limite: \\( \\lim_{b \\to \\infty} \\left( - \\frac{1}{b} + 1 \\right) = 1 \\)."
+            ],
+            "solution": "F(x) = 1."
+        },
+        {
+            "question": "\\int_{0}^{1} \\frac{1}{\\sqrt{x}} \\: dx",
+            "steps": [
+                "A função \\( \\frac{1}{\\sqrt{x}} \\) tem um comportamento problemático em \\( x = 0 \\), então devemos avaliar a integral como uma integral imprópria.",
+                "Escreva a integral como um limite: \\( \\int_{0}^{1} \\frac{1}{\\sqrt{x}} \\: dx = \\lim_{a \\to 0^{+}} \\int_{a}^{1} \\frac{1}{\\sqrt{x}} \\: dx \\).",
+                "Integre \\( \\frac{1}{\\sqrt{x}} \\) utilizando a fórmula \\( \\int x^{-\\frac{1}{2}} \\: dx = 2x^{\\frac{1}{2}} \\).",
+                "A integral se torna \\( \\left[ 2 \\sqrt{x} \\right]_{a}^{1} = 2 \\sqrt{1} - 2 \\sqrt{a} = 2 - 2 \\sqrt{a} \\).",
+                "Agora, aplique o limite: \\( \\lim_{a \\to 0^{+}} (2 - 2 \\sqrt{a}) = 2 \\)."
+            ],
+            "solution": "F(x) = 2."
+        },
+        {
+            "question": "\\int_{1}^{\\infty} \\frac{e^{-x}}{x} \\: dx",
+            "steps": [
+                "Esta integral é uma integral imprópria no limite superior, então vamos escrever como um limite: \\( \\int_{1}^{\\infty} \\frac{e^{-x}}{x} \\: dx = \\lim_{b \\to \\infty} \\int_{1}^{b} \\frac{e^{-x}}{x} \\: dx \\).",
+                "Embora a integral de \\( \\frac{e^{-x}}{x} \\) não tenha uma antiderivada simples, ela pode ser aproximada numericamente ou utilizando funções especiais.",
+                "Este tipo de integral é conhecido como a integral exponencial, denotada por \\( \text{Ei}(x) \\).",
+                "A solução exata da integral é \\( \\int_{1}^{\\infty} \\frac{e^{-x}}{x} \\: dx = \\text{Ei}(-1) \\)."
+            ],
+            "solution": "F(x) = \\text{Ei}(-1)."
+        },
+        {
+            "question": "\\int_{0}^{\\infty} \\frac{1}{x^2 + 1} \\: dx",
+            "steps": [
+                "A função \\( \\frac{1}{x^2 + 1} \\) é contínua e integrável no intervalo \\([0, \\infty)\\), então escreva a integral como um limite.",
+                "Escreva a integral como \\( \\int_{0}^{\\infty} \\frac{1}{x^2 + 1} \\: dx = \\lim_{b \\to \\infty} \\int_{0}^{b} \\frac{1}{x^2 + 1} \\: dx \\).",
+                "A integral de \\( \\frac{1}{x^2 + 1} \\) é \\( \\arctan(x) \\).",
+                "A integral se torna \\( \\left[ \\arctan(x) \\right]_{0}^{b} = \\arctan(b) - \\arctan(0) \\).",
+                "Agora, aplique o limite: \\( \\lim_{b \\to \\infty} \\left( \\arctan(b) - 0 \\right) = \\frac{\\pi}{2} \\)."
+            ],
+            "solution": "F(x) = \\frac{\\pi}{2}."
+        },
+        {
+            "question": "\\int_{1}^{\\infty} \\frac{1}{x^3} \\: dx",
+            "steps": [
+                "A função \\( \\frac{1}{x^3} \\) é contínua no intervalo \\([1, \\infty)\\), então podemos aplicar o limite para a integral imprópria.",
+                "Escreva a integral como \\( \\int_{1}^{\\infty} \\frac{1}{x^3} \\: dx = \\lim_{b \\to \\infty} \\int_{1}^{b} \\frac{1}{x^3} \\: dx \\).",
+                "Integre \\( \\frac{1}{x^3} \\) usando a regra da potência: \\( \\int x^{-3} \\: dx = - \\frac{1}{2x^2} \\).",
+                "A integral se torna \\( \\left[ - \\frac{1}{2x^2} \\right]_{1}^{b} = - \\frac{1}{2b^2} + \\frac{1}{2} \\).",
+                "Agora, aplique o limite: \\( \\lim_{b \\to \\infty} \\left( - \\frac{1}{2b^2} + \\frac{1}{2} \\right) = \\frac{1}{2} \\)."
+            ],
+            "solution": "F(x) = \\frac{1}{2}."
+        }
+    ],
+    "aplication": "<center><h3>Aplicação</h3></center>\n\nAs integrais impróprias aparecem frequentemente em problemas de física e engenharia, como no cálculo de áreas e volumes de regiões limitadas por curvas que se estendem infinitamente ou no cálculo de valores médios de funções em intervalos infinitos. Um exemplo comum é o cálculo de fluxos e áreas em torno de distribuições de probabilidades, como a função de distribuição exponencial, onde a integral imprópria é usada para modelar a vida útil média de um componente ou a intensidade de radiação em distâncias grandes <br><br>"
+}
     
 ];
 
@@ -892,6 +980,7 @@ const lessonImage = document.getElementById("lessonImage");
 const lessonSummary = document.getElementById("lessonSummary");
 const lessonExercises = document.getElementById("lessonExercises");
 const lessonSelect = document.getElementById("lessonSelect");
+const lessonAplication = document.getElementById("lessonAplication");
 
 function loadLessonOptions() {
     lessons.forEach((lesson, index) => {
@@ -905,32 +994,45 @@ function loadLessonOptions() {
 function loadLesson(index) {
     currentLesson = index;
     const lesson = lessons[index];
+
     lessonTitle.textContent = lesson.title;
     lessonImage.src = lesson.image;
     lessonSummary.textContent = lesson.summary;
 
-    // Atualiza a lista de exercícios com LaTeX e passos
-    lessonExercises.innerHTML = lesson.exercises.map(exercise => {
-        let stepsHtml = '';
-        if (exercise.steps) {
-            stepsHtml = `
-                <ol>
-                    ${exercise.steps.map(step => `<li>${step}</li>`).join("")}
-                </ol>
+
+    if (index === 0){
+        lessonExercises.innerHTML = "";
+        lessonAplication.innerHTML = "";
+
+        return ``;
+    } else {        
+        // Atualiza a lista de exercícios com LaTeX e passos
+        lessonExercises.innerHTML = lesson.exercises.map(exercise => {
+            let stepsHtml = '';
+            if (exercise.steps) {
+                stepsHtml = `
+                    <ol>
+                        ${exercise.steps.map(step => `<li>${step}</li>`).join("")}
+                    </ol>
+                `;
+            }
+        
+            return `
+                <li>
+                    <br>
+                    <strong>Exercício:</strong> Calcule  \\( ${exercise.question} \\)<br>
+                    ${stepsHtml}
+                    <strong>Resolução:</strong> A solução é \\( ${exercise.solution} \\)
+                </li>
             `;
-        }
+        }).join(""); 
 
-        return `
-            <li>
-                <strong>Exercício:</strong> Calcule  \\( ${exercise.question} \\)<br>
-                ${stepsHtml}
-                <strong>Resolução:</strong> A solução é \\( ${exercise.solution} \\)
-            </li>
-        `;
-    }).join(""); 
+        lessonAplication.innerHTML = lesson.aplication;
+       
+        MathJax.typeset(); // Atualiza as expressões LaTeX
 
+    }
     lessonSelect.value = index;
-    MathJax.typeset(); // Atualiza as expressões LaTeX
 }
 
 function navigateLesson(direction) {
