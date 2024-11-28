@@ -1,6 +1,6 @@
 const lessons = [
     {
-        "title": "ResumoAAAAAAAAAAAAAAAAAAAAAA",
+        "title": "Resumo",
         "image": "imagens/resumocalculo.png",
         "summary": "O Cálculo 2 é uma disciplina essencial que aprofunda o estudo do Cálculo Diferencial e Integral, com foco em integrais, séries e suas aplicações. Este resumo aborda os principais conceitos, propriedades e métodos de integração, explorando integrais indefinidas e definidas, além de técnicas avançadas como frações parciais e integrais por partes. A integração é crucial para resolver problemas envolvendo áreas, volumes e modelagem de fenômenos físicos e matemáticos. As integrais indefinidas são utilizadas para encontrar a antiderivada de funções, resultando em uma família de soluções expressa em função da constante de integração \(C\). Já as integrais definidas são usadas para calcular áreas sob curvas, e o Teorema Fundamental do Cálculo facilita a avaliação de integrais com limites. O estudo de técnicas de integração, como substituição trigonométrica, frações parciais e integração por partes, permite resolver problemas mais complexos. As aplicações de Cálculo 2 incluem o cálculo de comprimento de arco, volumes de sólidos de revolução e áreas entre curvas, sendo amplamente utilizado em física, engenharia e ciências computacionais."
     },
