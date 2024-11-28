@@ -10,7 +10,7 @@ const lessons = [
         "summary": "O cálculo da diferencial em funções de uma variável trata do estudo das taxas de variação de uma função quando a variável independente sofre pequenas alterações. A operação principal desse estudo é a derivada, que nos fornece a taxa de variação instantânea de uma função em relação a uma de suas variáveis. Para entender melhor, a diferencial de uma função em um ponto é uma aproximação linear do comportamento da função em torno desse ponto. Essa aproximação é crucial para entender como pequenas variações em um valor de entrada afetam o resultado da função. Matematicamente, a diferencial é expressa como \\( df(x) = f'(x) dx \\), onde \\( f'(x) \\) é a derivada da função em um ponto \\( x \\) e \\( dx \\) representa uma pequena variação na variável independente. A diferencial é usada para estimar mudanças pequenas e aproximar comportamentos de funções complexas em pontos específicos. Além disso, a diferenciação e a utilização de diferenciais são essenciais para o estudo do comportamento local de funções, sendo amplamente aplicada em diversas áreas, como física, economia, biologia, e engenharia. Por exemplo, na física, as diferenciais são fundamentais para entender como a velocidade de um objeto muda com o tempo (derivada da posição em relação ao tempo), ou em economia, para calcular como uma pequena variação no preço de um bem pode influenciar a demanda. Essa aula proporciona os fundamentos para a análise de funções e sua taxa de variação instantânea, o que permite ao aluno calcular o impacto de variações pequenas em uma variável independente em diferentes contextos.",
         "exercises": [
             { 
-                "question": "f(x) = 3x² + 2x",
+                "question": "Qual é a diferencial da função \\(f(x) = 3x^2 + 2x\\)?",
                 "steps": [
                     "Identifique os termos: \\( 3x² \\) e \\( 2x \\).",
                     "Diferencie \\( 3x² \\) usando a regra do expoente: \\( 2 \\cdot 3x^{2-1} = 6x \\).",
@@ -21,7 +21,7 @@ const lessons = [
                 "solution": "df(x) = (6x + 2) dx." 
             },
             {
-                "question": "f(x) = e^x",
+                "question": "Qual é a diferencial da função \\(f(x) = e^x\\)?",
                 "steps": [
                     "Identifique que \\( e^x \\) é uma função exponencial.",
                     "A derivada de \\( e^x \\) é ela mesma, \\( e^x \\).",
@@ -30,7 +30,7 @@ const lessons = [
                 "solution": "df(x) = e^x dx."
             },
             {
-                "question": "f(x) = ln(x)",
+                "question": "Qual é a diferencial da função \\(f(x) = \\ln(x)\\)?",
                 "steps": [
                     "Identifique que \\( \\ln(x) \\) é uma função logarítmica.",
                     "A derivada de \\( \\ln(x) \\) é dada por \\( 1/x \\).",
@@ -39,7 +39,7 @@ const lessons = [
                 "solution": "df(x) = (1/x) dx."
             },
             {
-                "question": "f(x) = x^3 - 4x + 7",
+                "question": "Qual é a diferencial da função \\(f(x) = x^3 - 4x + 7\\)?",
                 "steps": [
                     "Identifique os termos: \\( x^3 \\), \\( -4x \\), e \\( 7 \\).",
                     "Diferencie \\( x^3 \\) usando a regra do expoente: \\( 3x^{3-1} = 3x^2 \\).",
@@ -51,7 +51,7 @@ const lessons = [
                 "solution": "df(x) = (3x^2 - 4) dx."
             },
             {
-                "question": "f(x) = sin(x)",
+                "question": "Qual é a diferencial da função \\(f(x) = \\sin(x)\\)?",
                 "steps": [
                     "Identifique que \\( \\sin(x) \\) é uma função trigonométrica.",
                     "A derivada de \\( \\sin(x) \\) é \\( \\cos(x) \\).",
@@ -67,7 +67,7 @@ const lessons = [
         "summary": "A integral indefinida é o processo inverso da diferenciação. Ela nos permite encontrar uma função a partir de sua derivada. Quando aplicamos a integral indefinida, buscamos uma função cuja derivada seja igual à função que estamos integrando. O conceito de constante de integração, 'C', surge porque várias funções podem ter a mesma derivada, mas com diferentes valores constantes. O cálculo de integrais indefinidas é uma ferramenta poderosa para resolver problemas de áreas e volumes e para modelar fenômenos contínuos. A integral é essencial não só no estudo da geometria, mas também em várias áreas aplicadas, como a física e a engenharia, onde usamos integrais para calcular o trabalho realizado por uma força ou para determinar a área sob uma curva. Em problemas de física, por exemplo, a integral indefinida é usada para calcular o deslocamento a partir da velocidade de um objeto, enquanto em economia, ela pode ser usada para calcular a área entre a curva de oferta e demanda.",
         "exercises": [
             {
-                "question": " \\int x^2 dx.",
+                "question": "Qual é a integral indefinida da função \\( x^2 \\)?",
                 "steps": [
                     "Identifique a função a ser integrada: \\( x^2 \\).",
                     "Aplique a regra da potência para integrais: \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\), onde \\( n = 2 \\).",
@@ -75,24 +75,27 @@ const lessons = [
                 ],
                 "solution": "\( F(x) = \\frac{1}{3}x^3 + C \)."
             },
+    
             {
-                "question": " \\int e^x dx.",
+                "question": "Qual é a integral indefinida da função \\( e^x \\)?",
                 "steps": [
                     "Identifique que \\( e^x \\) é uma função exponencial.",
                     "A integral de \\( e^x \\) é ela mesma: \\( \\int e^x dx = e^x + C \\)."
                 ],
                 "solution": "\( F(x) = e^x + C \)."
             },
+    
             {
-                "question": " \\int cos(x) dx.",
+                "question": "Qual é a integral indefinida da função \\( \\cos(x) \\)?",
                 "steps": [
-                    "Identifique que \\( cos(x) \\) é uma função trigonométrica.",
-                    "A integral de \\( cos(x) \\) é \\( sin(x) \\)."
+                    "Identifique que \\( \\cos(x) \\) é uma função trigonométrica.",
+                    "A integral de \\( \\cos(x) \\) é \\( \\sin(x) \\)."
                 ],
-                "solution": "\( F(x) = sin(x) + C \)."
+                "solution": "\( F(x) = \\sin(x) + C \)."
             },
+    
             {
-                "question": " \\int (3x + 2) dx.",
+                "question": "Qual é a integral indefinida da função \\( 3x + 2 \\)?",
                 "steps": [
                     "Divida a integral em duas partes: \\( \\int (3x + 2) dx = \\int 3x dx + \\int 2 dx \\).",
                     "Integre \\( 3x \\): \\( \\int 3x dx = \\frac{3x^2}{2} \\).",
@@ -100,8 +103,9 @@ const lessons = [
                 ],
                 "solution": "\( F(x) = \\frac{3}{2}x^2 + 2x + C \)."
             },
+    
             {
-                "question": " \\int \\frac{1}{x} dx.",
+                "question": "Qual é a integral indefinida da função \\( \\frac{1}{x} \\)?",
                 "steps": [
                     "Identifique que \\( \\frac{1}{x} \\) é uma função logarítmica.",
                     "A integral de \\( \\frac{1}{x} \\) é \\( \\ln|x| \\)."
@@ -116,7 +120,7 @@ const lessons = [
         "summary": "Nesta aula, vimos técnicas mais avançadas para resolver integrais indefinidas. Quando as funções a serem integradas não podem ser diretamente integradas com as fórmulas básicas, utilizamos métodos como a substituição e a integração por partes. A substituição envolve a mudança de uma variável para simplificar a integral, enquanto a integração por partes é baseada na regra do produto da diferenciação. Essas técnicas ajudam a resolver integrais mais complexas, frequentemente encontradas em problemas práticos de cálculo. Além disso, a técnica de integração por partes é especialmente útil em problemas envolvendo produtos de funções, como o cálculo de integrais de funções exponenciais multiplicadas por polinômios, e a substituição é crucial quando lidamos com integrais que envolvem funções compostas, como as integrais de funções trigonométricas ou racionais.",
         "exercises": [
             {
-                "question": " \\int x e^x dx.",
+                "question": "Qual é a integral indefinida da função \\( x e^x \\)?",
                 "steps": [
                     "Esta é uma integral do tipo produto de duas funções. Vamos usar a regra de integração por partes: \\( \\int u dv = uv - \\int v du \\).",
                     "Escolha \\( u = x \\) e \\( dv = e^x dx \\).",
@@ -124,54 +128,54 @@ const lessons = [
                     "Aplique a fórmula da integração por partes: \\( \\int x e^x dx = x e^x - \\int e^x dx \\).",
                     "A integral de \\( e^x \\) é \\( e^x \\)."
                 ],
-                "solution": "\(F(x) = (x - 1)e^x + C\)"
+                "solution": "\(F(x) = e^x (x - 1) + C\)"
             },
             {
-                "question": " \\int x \\ln(x) dx.",
+                "question": "Qual é a integral indefinida da função \\( x \\ln(x) \\)?",
                 "steps": [
                     "Esta é uma integral do tipo produto. Vamos usar a integração por partes.",
                     "Escolha \\( u = \\ln(x) \\) e \\( dv = x dx \\).",
                     "Agora, calcule \\( du = \\frac{1}{x} dx \\) e \\( v = \\frac{x^2}{2} \\).",
-                    "Aplique a fórmula da integração por partes: \\( \\int u dv = uv - \\int v du \\)."
+                    "Aplique a fórmula da integração por partes: \\( \\int x \\ln(x) dx = \\frac{x^2}{2} \\ln(x) - \\int \\frac{x^2}{2} \\cdot \\frac{1}{x} dx \\)."
                 ],
-                "solution": "\(F(x) = x ln(x) - x + C\)"
+                "solution": "\(F(x) = \\frac{x^2}{2} \\ln(x) - \\frac{x^2}{4} + C\)"
             },
             {
-                "question": " \\int (x^2 + 2x) dx.",
+                "question": "Qual é a integral indefinida da função \\( x^2 + 2x \\)?",
                 "steps": [
                     "Divida a integral em duas partes: \\( \\int (x^2 + 2x) dx = \\int x^2 dx + \\int 2x dx \\).",
                     "Integre \\( x^2 \\): \\( \\int x^2 dx = \\frac{x^3}{3} \\).",
                     "Integre \\( 2x \\): \\( \\int 2x dx = x^2 \\)."
                 ],
-                "solution": "\(F(x) = (1/3)x³ + x² + C.\)"
+                "solution": "\(F(x) = \\frac{x^3}{3} + x^2 + C\)"
             },
             {
-                "question": " \\int (3x^3 + 5x) dx.",
+                "question": "Qual é a integral indefinida da função \\( 3x^3 + 5x \\)?",
                 "steps": [
                     "Divida a integral em duas partes: \\( \\int (3x^3 + 5x) dx = \\int 3x^3 dx + \\int 5x dx \\).",
                     "Integre \\( 3x^3 \\): \\( \\int 3x^3 dx = \\frac{3x^4}{4} \\).",
                     "Integre \\( 5x \\): \\( \\int 5x dx = \\frac{5x^2}{2} \\)."
                 ],
-                "solution": "\(F(x) = (3/4)x⁴ + (5/2)x² + C\)"
+                "solution": "\(F(x) = \\frac{3x^4}{4} + \\frac{5x^2}{2} + C\)"
             },
             {
-                "question": " \\int \\cos^2(x) dx.",
+                "question": "Qual é a integral indefinida da função \\( \\cos^2(x) \\)?",
                 "steps": [
                     "Para integrar \\( \\cos^2(x) \\), use a identidade trigonométrica: \\( \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\).",
-                    "Substitua na integral: \\( \\int \\cos^2(x) dx = \\int \\frac{1 + \\cos(2x)}{2} dx \\).",
-                    "Agora, integre \\( 1/2 \\) e \\( \\cos(2x) \\)."
+                    "Substitua na integral: \\( \\int \\cos^2(x) dx = \\int \\frac{1}{2} dx + \\int \\frac{\\cos(2x)}{2} dx \\).",
+                    "Agora, integre \\( \\frac{1}{2} \\) e \\( \\frac{\\cos(2x)}{2} \\): a solução será a soma dessas partes."
                 ],
-                "solution": "\(F(x) = (x + sin(x)cos(x))/2 + C\)"
+                "solution": "\(F(x) = \\frac{x}{2} + \\frac{\\sin(2x)}{4} + C\)"
             }
         ]
-    },   
+    }, 
     {
         "title": "Aula 4: Exemplos e Exercícios de Integrais Indefinidas: Aprofundamento",
         "image": "imagens/imgemAula.jpg",
         "summary": "Neste estágio, vamos abordar integrais de funções racionais e técnicas avançadas para resolver integrais envolvendo frações algébricas, como a decomposição em frações parciais. Essa técnica é essencial para resolver integrais de funções racionais que não podem ser diretamente integradas. Além disso, vamos aplicar essas técnicas para resolver integrais de funções que envolvem raízes quadradas ou expressões trigonométricas, aumentando nossa capacidade de resolver problemas mais complexos. Vamos também trabalhar com integrais envolvendo expressões algébricas mais difíceis de manipular, como frações com denominadores polinomiais de grau superior e raízes quadradas. Esse aprendizado permitirá resolver problemas de cálculo mais complexos em várias disciplinas, como física, engenharia e economia.",
         "exercises": [
             {
-                "question": " ∫(1/(x² + 1)) dx.",
+                "question": "Resolva a integral ∫(1/(x² + 1)) dx.",
                 "steps": [
                     "Esta é uma integral clássica que resulta em uma função trigonométrica inversa.",
                     "Reconheça que \\( \\int \\frac{1}{x^2 + 1} dx = \\arctan(x) + C \\)."
@@ -179,16 +183,16 @@ const lessons = [
                 "solution": "F(x) = arctan(x) + C."
             },
             {
-                "question": " ∫(1/(x√(x² + 1))) dx.",
+                "question": "Resolva a integral ∫(1/(x√(x² + 1))) dx.",
                 "steps": [
-                    "Use a substituição trigonométrica, substituindo \\( x = \sinh(t) \\).",
-                    "Isso resulta na integral \\( \\int \\frac{1}{x\\sqrt{x^2 + 1}} dx \\) que simplifica para uma função logaritmica.",
-                    "A solução final é: \\( \\ln|x + \sqrt{x^2 + 1}| + C \\)."
+                    "Use a substituição trigonométrica, substituindo \\( x = \\sinh(t) \\).",
+                    "Isso resulta na integral \\( \\int \\frac{1}{x\\sqrt{x^2 + 1}} dx \\) que simplifica para uma função logarítmica.",
+                    "A solução final é: \\( \\ln|x + \\sqrt{x^2 + 1}| + C \\)."
                 ],
                 "solution": "F(x) = ln|x + √(x² + 1)| + C."
             },
             {
-                "question": " ∫(x/(x² + 1)) dx.",
+                "question": "Resolva a integral ∫(x/(x² + 1)) dx.",
                 "steps": [
                     "Esta integral pode ser resolvida por substituição simples.",
                     "Escolha \\( u = x^2 + 1 \\), logo \\( du = 2x dx \\).",
@@ -198,7 +202,7 @@ const lessons = [
                 "solution": "F(x) = (1/2)ln(x² + 1) + C."
             },
             {
-                "question": " ∫(x⁵ dx).",
+                "question": "Resolva a integral ∫(x⁵ dx).",
                 "steps": [
                     "Para integrar \\( x^5 \\), aplique a regra da potência: \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\).",
                     "Aqui, \\( n = 5 \\), então a integral se torna \\( \\frac{x^6}{6} + C \\)."
@@ -206,7 +210,7 @@ const lessons = [
                 "solution": "F(x) = (1/6)x⁶ + C."
             },
             {
-                "question": " ∫(1/(x²)) dx.",
+                "question": "Resolva a integral ∫(1/(x²)) dx.",
                 "steps": [
                     "Esta é uma integral de uma função racional simples.",
                     "Reconheça que \\( \\int \\frac{1}{x^2} dx = -\\frac{1}{x} + C \\)."
@@ -653,7 +657,7 @@ function loadLesson(index) {
 
         return `
             <li>
-                <strong>Exercício:</strong> Calcule a diferencial de \\( ${exercise.question} \\)<br>
+                <strong>Exercício:</strong> ${exercise.question}<br>
                 ${stepsHtml}
                 <strong>Resolução:</strong> A solução é \\( ${exercise.solution} \\)
             </li>
