@@ -21,7 +21,7 @@ const lessons = [
                 "solution": "df(x) = (6x + 2) dx." 
             },
             {
-                "question": "Qual é a diferencial da função \\(f(x) = e^x\\)?",
+                "question": "f(x) = e^x",
                 "steps": [
                     "Identifique que \\( e^x \\) é uma função exponencial.",
                     "A derivada de \\( e^x \\) é ela mesma, \\( e^x \\).",
@@ -30,7 +30,7 @@ const lessons = [
                 "solution": "df(x) = e^x dx."
             },
             {
-                "question": "Qual é a diferencial da função \\(f(x) = \\ln(x)\\)?",
+                "question": "f(x) = ln(x)",
                 "steps": [
                     "Identifique que \\( \\ln(x) \\) é uma função logarítmica.",
                     "A derivada de \\( \\ln(x) \\) é dada por \\( 1/x \\).",
@@ -39,7 +39,7 @@ const lessons = [
                 "solution": "df(x) = (1/x) dx."
             },
             {
-                "question": "Qual é a diferencial da função \\(f(x) = x^3 - 4x + 7\\)?",
+                "question": "f(x) = x^3 - 4x + 7",
                 "steps": [
                     "Identifique os termos: \\( x^3 \\), \\( -4x \\), e \\( 7 \\).",
                     "Diferencie \\( x^3 \\) usando a regra do expoente: \\( 3x^{3-1} = 3x^2 \\).",
@@ -51,7 +51,7 @@ const lessons = [
                 "solution": "df(x) = (3x^2 - 4) dx."
             },
             {
-                "question": "Qual é a diferencial da função \\(f(x) = \\sin(x)\\)?",
+                "question": "f(x) = sin(x)",
                 "steps": [
                     "Identifique que \\( \\sin(x) \\) é uma função trigonométrica.",
                     "A derivada de \\( \\sin(x) \\) é \\( \\cos(x) \\).",
@@ -67,7 +67,7 @@ const lessons = [
         "summary": "A integral indefinida é o processo inverso da diferenciação. Ela nos permite encontrar uma função a partir de sua derivada. Quando aplicamos a integral indefinida, buscamos uma função cuja derivada seja igual à função que estamos integrando. O conceito de constante de integração, 'C', surge porque várias funções podem ter a mesma derivada, mas com diferentes valores constantes. O cálculo de integrais indefinidas é uma ferramenta poderosa para resolver problemas de áreas e volumes e para modelar fenômenos contínuos. A integral é essencial não só no estudo da geometria, mas também em várias áreas aplicadas, como a física e a engenharia, onde usamos integrais para calcular o trabalho realizado por uma força ou para determinar a área sob uma curva. Em problemas de física, por exemplo, a integral indefinida é usada para calcular o deslocamento a partir da velocidade de um objeto, enquanto em economia, ela pode ser usada para calcular a área entre a curva de oferta e demanda.",
         "exercises": [
             {
-                "question": "Qual é a integral indefinida da função \\( x^2 \\)?",
+                "question": " \\int x^2 dx.",
                 "steps": [
                     "Identifique a função a ser integrada: \\( x^2 \\).",
                     "Aplique a regra da potência para integrais: \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\), onde \\( n = 2 \\).",
@@ -75,27 +75,24 @@ const lessons = [
                 ],
                 "solution": "\( F(x) = \\frac{1}{3}x^3 + C \)."
             },
-    
             {
-                "question": "Qual é a integral indefinida da função \\( e^x \\)?",
+                "question": " \\int e^x dx.",
                 "steps": [
                     "Identifique que \\( e^x \\) é uma função exponencial.",
                     "A integral de \\( e^x \\) é ela mesma: \\( \\int e^x dx = e^x + C \\)."
                 ],
                 "solution": "\( F(x) = e^x + C \)."
             },
-    
             {
-                "question": "Qual é a integral indefinida da função \\( \\cos(x) \\)?",
+                "question": " \\int cos(x) dx.",
                 "steps": [
-                    "Identifique que \\( \\cos(x) \\) é uma função trigonométrica.",
-                    "A integral de \\( \\cos(x) \\) é \\( \\sin(x) \\)."
+                    "Identifique que \\( cos(x) \\) é uma função trigonométrica.",
+                    "A integral de \\( cos(x) \\) é \\( sin(x) \\)."
                 ],
-                "solution": "\( F(x) = \\sin(x) + C \)."
+                "solution": "\( F(x) = sin(x) + C \)."
             },
-    
             {
-                "question": "Qual é a integral indefinida da função \\( 3x + 2 \\)?",
+                "question": " \\int (3x + 2) dx.",
                 "steps": [
                     "Divida a integral em duas partes: \\( \\int (3x + 2) dx = \\int 3x dx + \\int 2 dx \\).",
                     "Integre \\( 3x \\): \\( \\int 3x dx = \\frac{3x^2}{2} \\).",
@@ -103,9 +100,8 @@ const lessons = [
                 ],
                 "solution": "\( F(x) = \\frac{3}{2}x^2 + 2x + C \)."
             },
-    
             {
-                "question": "Qual é a integral indefinida da função \\( \\frac{1}{x} \\)?",
+                "question": " \\int \\frac{1}{x} dx.",
                 "steps": [
                     "Identifique que \\( \\frac{1}{x} \\) é uma função logarítmica.",
                     "A integral de \\( \\frac{1}{x} \\) é \\( \\ln|x| \\)."
@@ -120,7 +116,7 @@ const lessons = [
         "summary": "Nesta aula, vimos técnicas mais avançadas para resolver integrais indefinidas. Quando as funções a serem integradas não podem ser diretamente integradas com as fórmulas básicas, utilizamos métodos como a substituição e a integração por partes. A substituição envolve a mudança de uma variável para simplificar a integral, enquanto a integração por partes é baseada na regra do produto da diferenciação. Essas técnicas ajudam a resolver integrais mais complexas, frequentemente encontradas em problemas práticos de cálculo. Além disso, a técnica de integração por partes é especialmente útil em problemas envolvendo produtos de funções, como o cálculo de integrais de funções exponenciais multiplicadas por polinômios, e a substituição é crucial quando lidamos com integrais que envolvem funções compostas, como as integrais de funções trigonométricas ou racionais.",
         "exercises": [
             {
-                "question": "Qual é a integral indefinida da função \\( x e^x \\)?",
+                "question": " \\int x e^x dx.",
                 "steps": [
                     "Esta é uma integral do tipo produto de duas funções. Vamos usar a regra de integração por partes: \\( \\int u dv = uv - \\int v du \\).",
                     "Escolha \\( u = x \\) e \\( dv = e^x dx \\).",
@@ -128,54 +124,54 @@ const lessons = [
                     "Aplique a fórmula da integração por partes: \\( \\int x e^x dx = x e^x - \\int e^x dx \\).",
                     "A integral de \\( e^x \\) é \\( e^x \\)."
                 ],
-                "solution": "\(F(x) = e^x (x - 1) + C\)"
+                "solution": "\(F(x) = (x - 1)e^x + C\)"
             },
             {
-                "question": "Qual é a integral indefinida da função \\( x \\ln(x) \\)?",
+                "question": " \\int x \\ln(x) dx.",
                 "steps": [
                     "Esta é uma integral do tipo produto. Vamos usar a integração por partes.",
                     "Escolha \\( u = \\ln(x) \\) e \\( dv = x dx \\).",
                     "Agora, calcule \\( du = \\frac{1}{x} dx \\) e \\( v = \\frac{x^2}{2} \\).",
-                    "Aplique a fórmula da integração por partes: \\( \\int x \\ln(x) dx = \\frac{x^2}{2} \\ln(x) - \\int \\frac{x^2}{2} \\cdot \\frac{1}{x} dx \\)."
+                    "Aplique a fórmula da integração por partes: \\( \\int u dv = uv - \\int v du \\)."
                 ],
-                "solution": "\(F(x) = \\frac{x^2}{2} \\ln(x) - \\frac{x^2}{4} + C\)"
+                "solution": "\(F(x) = x ln(x) - x + C\)"
             },
             {
-                "question": "Qual é a integral indefinida da função \\( x^2 + 2x \\)?",
+                "question": " \\int (x^2 + 2x) dx.",
                 "steps": [
                     "Divida a integral em duas partes: \\( \\int (x^2 + 2x) dx = \\int x^2 dx + \\int 2x dx \\).",
                     "Integre \\( x^2 \\): \\( \\int x^2 dx = \\frac{x^3}{3} \\).",
                     "Integre \\( 2x \\): \\( \\int 2x dx = x^2 \\)."
                 ],
-                "solution": "\(F(x) = \\frac{x^3}{3} + x^2 + C\)"
+                "solution": "\(F(x) = (1/3)x³ + x² + C.\)"
             },
             {
-                "question": "Qual é a integral indefinida da função \\( 3x^3 + 5x \\)?",
+                "question": " \\int (3x^3 + 5x) dx.",
                 "steps": [
                     "Divida a integral em duas partes: \\( \\int (3x^3 + 5x) dx = \\int 3x^3 dx + \\int 5x dx \\).",
                     "Integre \\( 3x^3 \\): \\( \\int 3x^3 dx = \\frac{3x^4}{4} \\).",
                     "Integre \\( 5x \\): \\( \\int 5x dx = \\frac{5x^2}{2} \\)."
                 ],
-                "solution": "\(F(x) = \\frac{3x^4}{4} + \\frac{5x^2}{2} + C\)"
+                "solution": "\(F(x) = (3/4)x⁴ + (5/2)x² + C\)"
             },
             {
-                "question": "Qual é a integral indefinida da função \\( \\cos^2(x) \\)?",
+                "question": " \\int \\cos^2(x) dx.",
                 "steps": [
                     "Para integrar \\( \\cos^2(x) \\), use a identidade trigonométrica: \\( \\cos^2(x) = \\frac{1 + \\cos(2x)}{2} \\).",
-                    "Substitua na integral: \\( \\int \\cos^2(x) dx = \\int \\frac{1}{2} dx + \\int \\frac{\\cos(2x)}{2} dx \\).",
-                    "Agora, integre \\( \\frac{1}{2} \\) e \\( \\frac{\\cos(2x)}{2} \\): a solução será a soma dessas partes."
+                    "Substitua na integral: \\( \\int \\cos^2(x) dx = \\int \\frac{1 + \\cos(2x)}{2} dx \\).",
+                    "Agora, integre \\( 1/2 \\) e \\( \\cos(2x) \\)."
                 ],
-                "solution": "\(F(x) = \\frac{x}{2} + \\frac{\\sin(2x)}{4} + C\)"
+                "solution": "\(F(x) = (x + sin(x)cos(x))/2 + C\)"
             }
         ]
-    }, 
+    },   
     {
         "title": "Aula 4: Exemplos e Exercícios de Integrais Indefinidas: Aprofundamento",
         "image": "imagens/imgemAula.jpg",
         "summary": "Neste estágio, vamos abordar integrais de funções racionais e técnicas avançadas para resolver integrais envolvendo frações algébricas, como a decomposição em frações parciais. Essa técnica é essencial para resolver integrais de funções racionais que não podem ser diretamente integradas. Além disso, vamos aplicar essas técnicas para resolver integrais de funções que envolvem raízes quadradas ou expressões trigonométricas, aumentando nossa capacidade de resolver problemas mais complexos. Vamos também trabalhar com integrais envolvendo expressões algébricas mais difíceis de manipular, como frações com denominadores polinomiais de grau superior e raízes quadradas. Esse aprendizado permitirá resolver problemas de cálculo mais complexos em várias disciplinas, como física, engenharia e economia.",
         "exercises": [
             {
-                "question": "Resolva a integral ∫(1/(x² + 1)) dx.",
+                "question": " ∫(1/(x² + 1)) dx.",
                 "steps": [
                     "Esta é uma integral clássica que resulta em uma função trigonométrica inversa.",
                     "Reconheça que \\( \\int \\frac{1}{x^2 + 1} dx = \\arctan(x) + C \\)."
@@ -183,16 +179,16 @@ const lessons = [
                 "solution": "F(x) = arctan(x) + C."
             },
             {
-                "question": "Resolva a integral ∫(1/(x√(x² + 1))) dx.",
+                "question": " ∫(1/(x√(x² + 1))) dx.",
                 "steps": [
-                    "Use a substituição trigonométrica, substituindo \\( x = \\sinh(t) \\).",
-                    "Isso resulta na integral \\( \\int \\frac{1}{x\\sqrt{x^2 + 1}} dx \\) que simplifica para uma função logarítmica.",
-                    "A solução final é: \\( \\ln|x + \\sqrt{x^2 + 1}| + C \\)."
+                    "Use a substituição trigonométrica, substituindo \\( x = \sinh(t) \\).",
+                    "Isso resulta na integral \\( \\int \\frac{1}{x\\sqrt{x^2 + 1}} dx \\) que simplifica para uma função logaritmica.",
+                    "A solução final é: \\( \\ln|x + \sqrt{x^2 + 1}| + C \\)."
                 ],
                 "solution": "F(x) = ln|x + √(x² + 1)| + C."
             },
             {
-                "question": "Resolva a integral ∫(x/(x² + 1)) dx.",
+                "question": " ∫(x/(x² + 1)) dx.",
                 "steps": [
                     "Esta integral pode ser resolvida por substituição simples.",
                     "Escolha \\( u = x^2 + 1 \\), logo \\( du = 2x dx \\).",
@@ -202,7 +198,7 @@ const lessons = [
                 "solution": "F(x) = (1/2)ln(x² + 1) + C."
             },
             {
-                "question": "Resolva a integral ∫(x⁵ dx).",
+                "question": " ∫(x⁵ dx).",
                 "steps": [
                     "Para integrar \\( x^5 \\), aplique a regra da potência: \\( \\int x^n dx = \\frac{x^{n+1}}{n+1} + C \\).",
                     "Aqui, \\( n = 5 \\), então a integral se torna \\( \\frac{x^6}{6} + C \\)."
@@ -210,7 +206,7 @@ const lessons = [
                 "solution": "F(x) = (1/6)x⁶ + C."
             },
             {
-                "question": "Resolva a integral ∫(1/(x²)) dx.",
+                "question": " ∫(1/(x²)) dx.",
                 "steps": [
                     "Esta é uma integral de uma função racional simples.",
                     "Reconheça que \\( \\int \\frac{1}{x^2} dx = -\\frac{1}{x} + C \\)."
@@ -496,84 +492,270 @@ const lessons = [
     {
         "title": "Aula 10: Integrais por Integração por Partes",
         "image": "imagens/imgemAula.jpg",
-        "summary": "Na Aula 10, abordaremos a técnica de integração por partes, que é uma das ferramentas essenciais para integrar funções mais complexas. Vamos explorar o desenvolvimento das fórmulas básicas e como aplicá-las de forma eficaz. A integração por partes é baseada na fórmula \(\int u \, dv = uv - \int v \, du\), e em nossa aula, vamos aprender como escolher as funções \(u\) e \(dv\) para facilitar a integração de funções que não podem ser integradas diretamente. Serão discutidos exemplos práticos e desafios para aplicar essa técnica de forma eficiente.",
+        "summary": "Na Aula 10, abordaremos a técnica de integração por partes, que é uma das ferramentas essenciais para integrar funções mais complexas. Vamos explorar o desenvolvimento das fórmulas básicas e como aplicá-las de forma eficaz. A integração por partes é baseada na fórmula \\( \\int u \\, dv = uv - \\int v \\, du \\), e em nossa aula, vamos aprender como escolher as funções \\( u \\) e \\( dv \\) para facilitar a integração de funções que não podem ser integradas diretamente. Serão discutidos exemplos práticos e desafios para aplicar essa técnica de forma eficiente.",
         "exercises": [
-            { 
-                "question": "∫ x e^x dx", 
+            {
+                "question": "∫ x e^x dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = x \\), \\( dv = e^x dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = dx \\), \\( v = \\int e^x dx = e^x \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x e^x dx = x e^x - \\int e^x dx \\).",
+                    "Resolva a integral restante: \\( \\int x e^x dx = x e^x - e^x + C \\)."
+                ],
                 "solution": "F(x) = x e^x - e^x + C"
             },
-            { 
-                "question": "∫ ln(x) dx", 
+            {
+                "question": "∫ ln(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = ln(x) \\), \\( dv = dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = \\frac{1}{x} dx \\), \\( v = \\int dx = x \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int ln(x) dx = x ln(x) - \\int x \\frac{1}{x} dx \\).",
+                    "Resolva a integral restante: \\( \\int ln(x) dx = x ln(x) - x + C \\)."
+                ],
                 "solution": "F(x) = x ln(x) - x + C"
             },
-            { 
-                "question": "∫ x² cos(x) dx", 
-                "solution": "F(x) = x² sin(x) + 2x cos(x) - 2sin(x) + C"
+            {
+                "question": "∫ x² cos(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = x^2 \\), \\( dv = cos(x) dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = 2x dx \\), \\( v = \\int cos(x) dx = sin(x) \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x^2 cos(x) dx = x^2 sin(x) - \\int 2x sin(x) dx \\).",
+                    "Repita o processo para \\( \\int 2x sin(x) dx \\) usando integração por partes novamente.",
+                    "Resolva: \\( F(x) = x^2 sin(x) + 2x cos(x) - 2 sin(x) + C \\)."
+                ],
+                "solution": "F(x) = x² sin(x) + 2x cos(x) - 2 sin(x) + C"
             },
-            { 
-                "question": "∫ e^x sin(x) dx", 
+            {
+                "question": "∫ e^x sin(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = sin(x) \\), \\( dv = e^x dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = cos(x) dx \\), \\( v = \\int e^x dx = e^x \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int e^x sin(x) dx = e^x sin(x) - \\int e^x cos(x) dx \\).",
+                    "Repita o processo para \\( \\int e^x cos(x) dx \\) usando integração por partes novamente.",
+                    "Combine os resultados: \\( F(x) = \\frac{1}{2} e^x (sin(x) - cos(x)) + C \\)."
+                ],
                 "solution": "F(x) = (1/2)e^x (sin(x) - cos(x)) + C"
             },
-            { 
-                "question": "∫ x³ ln(x) dx", 
+            {
+                "question": "∫ x³ ln(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = ln(x) \\), \\( dv = x^3 dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = \\frac{1}{x} dx \\), \\( v = \\int x^3 dx = \\frac{x^4}{4} \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x^3 ln(x) dx = \\frac{x^4 ln(x)}{4} - \\int \\frac{x^4}{4} \\frac{1}{x} dx \\).",
+                    "Resolva a integral restante: \\( \\int x^3 ln(x) dx = \\frac{x^4 ln(x)}{4} - \\frac{x^4}{16} + C \\).",
+                    "Simplifique: \\( F(x) = \\frac{x^4 ln(x)}{4} - \\frac{3x^4}{16} + C \\)."
+                ],
                 "solution": "F(x) = (x³ ln(x) - 3/4 x⁴) + C"
             }
         ]
     },
+    
     {
         "title": "Aula 11: Integrais Definidas com a Técnica de Integração por Partes",
         "image": "imagens/imgemAula.jpg",
         "summary": "Na Aula 11, abordaremos a aplicação da técnica de integração por partes em integrais definidas. Vamos explorar como adaptar a fórmula básica de integração por partes para trabalhar com limites de integração. Essa técnica se torna particularmente útil para resolver integrais de funções mais complexas, como produtos de funções algébricas, exponenciais, trigonométricas ou logaritmos. A aplicação de integrais definidas com a técnica de integração por partes é uma habilidade fundamental para resolver problemas de áreas, volumes e outros problemas aplicados.",
         "exercises": [
-            { 
-                "question": "∫₀¹ x e^x dx", 
+            {
+                "question": "∫₀¹ x e^x dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = x \\), \\( dv = e^x dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = dx \\), \\( v = \\int e^x dx = e^x \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x e^x dx = x e^x - \\int e^x dx \\).",
+                    "Resolva a integral restante: \\( \\int x e^x dx = x e^x - e^x \\).",
+                    "Avalie nos limites \\( [0, 1] \\): \\( [1 \\cdot e^1 - e^1] - [0 \\cdot e^0 - e^0] = e - 1 \\)."
+                ],
                 "solution": "F(x) = e - 1"
             },
             {
                 "question": "∫₁² x ln(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = ln(x) \\), \\( dv = x dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = \\frac{1}{x} dx \\), \\( v = \\int x dx = \\frac{x^2}{2} \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x ln(x) dx = \\frac{x^2}{2} ln(x) - \\int \\frac{x^2}{2} \\frac{1}{x} dx \\).",
+                    "Resolva a integral restante: \\( \\int x ln(x) dx = \\frac{x^2}{2} ln(x) - \\frac{x^2}{4} \\).",
+                    "Avalie nos limites \\( [1, 2] \\): \\( \\left[ \\frac{2^2}{2} ln(2) - \\frac{2^2}{4} \\right] - \\left[ \\frac{1^2}{2} ln(1) - \\frac{1^2}{4} \\right] = 2ln(2) - 1 \\)."
+                ],
                 "solution": "F(x) = 2ln(2) - 1"
             },
-            { 
-                "question": "∫₀π/2 x cos(x) dx", 
+            {
+                "question": "∫₀π/2 x cos(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = x \\), \\( dv = cos(x) dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = dx \\), \\( v = \\int cos(x) dx = sin(x) \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x cos(x) dx = x sin(x) - \\int sin(x) dx \\).",
+                    "Resolva a integral restante: \\( \\int x cos(x) dx = x sin(x) + cos(x) \\).",
+                    "Avalie nos limites \\( [0, \\pi/2] \\): \\( \\left[ \\frac{\\pi}{2} \\cdot sin\\left(\\frac{\\pi}{2}\\right) + cos\\left(\\frac{\\pi}{2}\\right) \\right] - \\left[ 0 \\cdot sin(0) + cos(0) \\right] = \\frac{\\pi}{2} \\)."
+                ],
                 "solution": "F(x) = π/2"
             },
-            { 
-                "question": "∫₀² x² e^x dx", 
+            {
+                "question": "∫₀² x² e^x dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = x^2 \\), \\( dv = e^x dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = 2x dx \\), \\( v = \\int e^x dx = e^x \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x^2 e^x dx = x^2 e^x - \\int 2x e^x dx \\).",
+                    "Resolva \\( \\int 2x e^x dx \\) com integração por partes novamente.",
+                    "Após resolver as integrais, avalie nos limites \\( [0, 2] \\): \\( \\int_0^2 x^2 e^x dx = 2e^2 - 5 \\)."
+                ],
                 "solution": "F(x) = 2e² - 5"
             },
-            { 
-                "question": "∫₁³ x³ ln(x) dx", 
+            {
+                "question": "∫₁³ x³ ln(x) dx",
+                "steps": [
+                    "Identifique \\( u \\) e \\( dv \\): \\( u = ln(x) \\), \\( dv = x^3 dx \\).",
+                    "Calcule \\( du \\) e \\( v \\): \\( du = \\frac{1}{x} dx \\), \\( v = \\int x^3 dx = \\frac{x^4}{4} \\).",
+                    "Substitua na fórmula: \\( \\int u dv = uv - \\int v du \\).",
+                    "Resultado parcial: \\( \\int x^3 ln(x) dx = \\frac{x^4}{4} ln(x) - \\int \\frac{x^4}{4} \\frac{1}{x} dx \\).",
+                    "Resolva a integral restante: \\( \\int x^3 ln(x) dx = \\frac{x^4}{4} ln(x) - \\frac{x^4}{16} \\).",
+                    "Avalie nos limites \\( [1, 3] \\): \\( \\int_1^3 x^3 ln(x) dx = 27ln(3) - 45 \\)."
+                ],
                 "solution": "F(x) = 27ln(3) - 45"
             }
         ]
     },
+    
 
     {
         "title": "Aula 12: Integrais de Funções Racionais por Frações Parciais",
         "image": "imagens/imgemAula.jpg",
         "summary": "Nesta aula, introduziremos o método de frações parciais para calcular integrais de funções racionais. O foco estará no 1º caso, que trata de funções racionais com denominadores que podem ser decompostos em fatores lineares distintos. Exploraremos a técnica de decomposição e aplicaremos os métodos básicos de integração para resolver exemplos práticos e relevantes.",
         "exercises": [
-            { "question": "∫ 1/(x(x+1)) dx.", "solution": "F(x) = ln|x| - ln|x+1| + C." },
-            { "question": "∫ (x+2)/(x²+x) dx.", "solution": "F(x) = ln|x| + ln|x+1| + C." },
-            { "question": "∫ 1/(x²-1) dx.", "solution": "F(x) = (1/2)ln|x-1| - (1/2)ln|x+1| + C." },
-            { "question": "∫ (2x+3)/(x²+x-6) dx.", "solution": "F(x) = ln|x-2| - ln|x+3| + C." },
-            { "question": "∫ 1/(x²+3x+2) dx.", "solution": "F(x) = ln|x+1| - ln|x+2| + C." }
+            {
+                "question": "∫ 1/(x(x+1)) dx.",
+                "steps": [
+                    "Decomponha a fração: \\( \\frac{1}{x(x+1)} = \\frac{A}{x} + \\frac{B}{x+1} \\).",
+                    "Resolva para \\( A \\) e \\( B \\): \\( 1 = A(x+1) + Bx \\). Comparando coeficientes, \\( A = 1 \\) e \\( B = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x(x+1)} dx = \\int \\frac{1}{x} dx - \\int \\frac{1}{x+1} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x} dx = \\ln|x| \\) e \\( \\int \\frac{1}{x+1} dx = \\ln|x+1| \\).",
+                    "Combine os resultados: \\( F(x) = \\ln|x| - \\ln|x+1| + C \\)."
+                ],
+                "solution": "F(x) = ln|x| - ln|x+1| + C."
+            },
+            {
+                "question": "∫ (x+2)/(x²+x) dx.",
+                "steps": [
+                    "Fatore o denominador: \\( x^2 + x = x(x+1) \\).",
+                    "Decomponha a fração: \\( \\frac{x+2}{x(x+1)} = \\frac{A}{x} + \\frac{B}{x+1} \\).",
+                    "Resolva para \\( A \\) e \\( B \\): \\( x+2 = A(x+1) + Bx \\). Comparando coeficientes, \\( A = 1 \\) e \\( B = 1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{x+2}{x(x+1)} dx = \\int \\frac{1}{x} dx + \\int \\frac{1}{x+1} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x} dx = \\ln|x| \\) e \\( \\int \\frac{1}{x+1} dx = \\ln|x+1| \\).",
+                    "Combine os resultados: \\( F(x) = \\ln|x| + \\ln|x+1| + C \\)."
+                ],
+                "solution": "F(x) = ln|x| + ln|x+1| + C."
+            },
+            {
+                "question": "∫ 1/(x²-1) dx.",
+                "steps": [
+                    "Fatore o denominador: \\( x^2 - 1 = (x-1)(x+1) \\).",
+                    "Decomponha a fração: \\( \\frac{1}{x^2-1} = \\frac{A}{x-1} + \\frac{B}{x+1} \\).",
+                    "Resolva para \\( A \\) e \\( B \\): \\( 1 = A(x+1) + B(x-1) \\). Comparando coeficientes, \\( A = \\frac{1}{2} \\) e \\( B = -\\frac{1}{2} \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x^2-1} dx = \\frac{1}{2} \\int \\frac{1}{x-1} dx - \\frac{1}{2} \\int \\frac{1}{x+1} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x-1} dx = \\ln|x-1| \\) e \\( \\int \\frac{1}{x+1} dx = \\ln|x+1| \\).",
+                    "Combine os resultados: \\( F(x) = \\frac{1}{2} \\ln|x-1| - \\frac{1}{2} \\ln|x+1| + C \\)."
+                ],
+                "solution": "F(x) = (1/2)ln|x-1| - (1/2)ln|x+1| + C."
+            },
+            {
+                "question": "∫ (2x+3)/(x²+x-6) dx.",
+                "steps": [
+                    "Fatore o denominador: \\( x^2 + x - 6 = (x-2)(x+3) \\).",
+                    "Decomponha a fração: \\( \\frac{2x+3}{x^2+x-6} = \\frac{A}{x-2} + \\frac{B}{x+3} \\).",
+                    "Resolva para \\( A \\) e \\( B \\): \\( 2x+3 = A(x+3) + B(x-2) \\). Comparando coeficientes, \\( A = 1 \\) e \\( B = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{2x+3}{x^2+x-6} dx = \\int \\frac{1}{x-2} dx - \\int \\frac{1}{x+3} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x-2} dx = \\ln|x-2| \\) e \\( \\int \\frac{1}{x+3} dx = \\ln|x+3| \\).",
+                    "Combine os resultados: \\( F(x) = \\ln|x-2| - \\ln|x+3| + C \\)."
+                ],
+                "solution": "F(x) = ln|x-2| - ln|x+3| + C."
+            },
+            {
+                "question": "∫ 1/(x²+3x+2) dx.",
+                "steps": [
+                    "Fatore o denominador: \\( x^2 + 3x + 2 = (x+1)(x+2) \\).",
+                    "Decomponha a fração: \\( \\frac{1}{x^2+3x+2} = \\frac{A}{x+1} + \\frac{B}{x+2} \\).",
+                    "Resolva para \\( A \\) e \\( B \\): \\( 1 = A(x+2) + B(x+1) \\). Comparando coeficientes, \\( A = 1 \\) e \\( B = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x^2+3x+2} dx = \\int \\frac{1}{x+1} dx - \\int \\frac{1}{x+2} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x+1} dx = \\ln|x+1| \\) e \\( \\int \\frac{1}{x+2} dx = \\ln|x+2| \\).",
+                    "Combine os resultados: \\( F(x) = \\ln|x+1| - \\ln|x+2| + C \\)."
+                ],
+                "solution": "F(x) = ln|x+1| - ln|x+2| + C."
+            }
         ]
     },
-
+    
 
     {
         "title": "Aula 13: Integrais de Funções Racionais por Frações Parciais",
         "image": "imagens/imgemAula.jpg",
         "summary": "Nesta aula, vamos abordar as integrais de funções racionais utilizando o método de frações parciais, com ênfase no 2º caso. Este caso envolve funções racionais com fatores lineares repetidos no denominador. O objetivo é aprender a decompô-las em frações simples, permitindo uma integração mais direta. Serão discutidas técnicas para resolver integrais com múltiplas repetições e aplicar os resultados em problemas práticos.",
         "exercises": [
-            { "question": "∫ 1/(x(x+1)²) dx.", "solution": "F(x) = -1/x + 1/(x+1) - 1/(x+1)² + C." },
-            { "question": "∫ 1/(x²(x+2)) dx.", "solution": "F(x) = -1/x + 1/(2x²) - ln|x+2|/2 + C." },
-            { "question": "∫ (x+1)/(x²(x+1)²) dx.", "solution": "F(x) = -1/x² + 1/x - 1/(x+1) + ln|x+1| + C." },
-            { "question": "∫ 1/(x(x²+1)) dx.", "solution": "F(x) = ln|x|/2 - arctan(x)/2 + C." },
-            { "question": "∫ x/(x²(x+1)) dx.", "solution": "F(x) = -1/(2x²) + 1/x - ln|x+1| + C." }
+            {
+                "question": "∫ 1/(x(x+1)²) dx.",
+                "steps": [
+                    "Decomponha a fração: \\( \\frac{1}{x(x+1)^2} = \\frac{A}{x} + \\frac{B}{x+1} + \\frac{C}{(x+1)^2} \\).",
+                    "Resolva para \\( A \\), \\( B \\) e \\( C \\): \\( 1 = A(x+1)^2 + Bx(x+1) + Cx \\). Comparando coeficientes, obtenha \\( A = -1 \\), \\( B = 1 \\), \\( C = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x(x+1)^2} dx = \\int \\frac{-1}{x} dx + \\int \\frac{1}{x+1} dx - \\int \\frac{1}{(x+1)^2} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{-1}{x} dx = -\\ln|x| \\), \\( \\int \\frac{1}{x+1} dx = \\ln|x+1| \\), \\( \\int \\frac{1}{(x+1)^2} dx = -\\frac{1}{x+1} \\).",
+                    "Combine os resultados: \\( F(x) = -\\ln|x| + \\ln|x+1| - \\frac{1}{x+1} + C \\)."
+                ],
+                "solution": "F(x) = -ln|x| + ln|x+1| - 1/(x+1)² + C."
+            },
+            {
+                "question": "∫ 1/(x²(x+2)) dx.",
+                "steps": [
+                    "Decomponha a fração: \\( \\frac{1}{x^2(x+2)} = \\frac{A}{x} + \\frac{B}{x^2} + \\frac{C}{x+2} \\).",
+                    "Resolva para \\( A \\), \\( B \\) e \\( C \\): \\( 1 = A(x)(x+2) + B(x+2) + Cx^2 \\). Comparando coeficientes, obtenha \\( A = -1 \\), \\( B = 1/2 \\), \\( C = -1/2 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x^2(x+2)} dx = \\int \\frac{-1}{x} dx + \\int \\frac{1/2}{x^2} dx - \\int \\frac{1/2}{x+2} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{-1}{x} dx = -\\ln|x| \\), \\( \\int \\frac{1/2}{x^2} dx = -\\frac{1}{2x} \\), \\( \\int \\frac{-1/2}{x+2} dx = -\\frac{1}{2}\\ln|x+2| \\).",
+                    "Combine os resultados: \\( F(x) = -\\ln|x| - \\frac{1}{2x} - \\frac{1}{2}\\ln|x+2| + C \\)."
+                ],
+                "solution": "F(x) = -ln|x| + 1/(2x²) - ln|x+2|/2 + C."
+            },
+            {
+                "question": "∫ (x+1)/(x²(x+1)²) dx.",
+                "steps": [
+                    "Decomponha a fração: \\( \\frac{x+1}{x^2(x+1)^2} = \\frac{A}{x} + \\frac{B}{x^2} + \\frac{C}{x+1} + \\frac{D}{(x+1)^2} \\).",
+                    "Resolva para \\( A \\), \\( B \\), \\( C \\), \\( D \\): \\( x+1 = A(x)(x+1)^2 + B(x+1)^2 + C(x^2)(x+1) + D(x^2) \\).",
+                    "Determine \\( A = 0 \\), \\( B = -1 \\), \\( C = 1 \\), \\( D = 1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{x+1}{x^2(x+1)^2} dx = \\int \\frac{-1}{x^2} dx + \\int \\frac{1}{x} dx - \\int \\frac{1}{x+1} dx + \\int \\frac{1}{(x+1)^2} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{-1}{x^2} dx = \\frac{1}{x} \\), \\( \\int \\frac{1}{x} dx = \\ln|x| \\), \\( \\int \\frac{-1}{x+1} dx = -\\ln|x+1| \\), \\( \\int \\frac{1}{(x+1)^2} dx = -\\frac{1}{x+1} \\).",
+                    "Combine os resultados: \\( F(x) = \\frac{1}{x} + \\ln|x| - \\ln|x+1| - \\frac{1}{x+1} + C \\)."
+                ],
+                "solution": "F(x) = -1/x² + 1/x - 1/(x+1) + ln|x+1| + C."
+            },
+            {
+                "question": "∫ 1/(x(x²+1)) dx.",
+                "steps": [
+                    "Decomponha a fração: \\( \\frac{1}{x(x^2+1)} = \\frac{A}{x} + \\frac{Bx+C}{x^2+1} \\).",
+                    "Resolva para \\( A \\), \\( B \\), \\( C \\): \\( 1 = A(x^2+1) + (Bx+C)x \\). Comparando coeficientes, obtenha \\( A = 1 \\), \\( B = 0 \\), \\( C = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x(x^2+1)} dx = \\int \\frac{1}{x} dx - \\int \\frac{1}{x^2+1} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x} dx = \\ln|x| \\), \\( \\int \\frac{1}{x^2+1} dx = \\arctan(x) \\).",
+                    "Combine os resultados: \\( F(x) = \\ln|x| - \\arctan(x) + C \\)."
+                ],
+                "solution": "F(x) = ln|x|/2 - arctan(x)/2 + C."
+            },
+            {
+                "question": "∫ x/(x²(x+1)) dx.",
+                "steps": [
+                    "Decomponha a fração: \\( \\frac{x}{x^2(x+1)} = \\frac{A}{x} + \\frac{B}{x^2} + \\frac{C}{x+1} \\).",
+                    "Resolva para \\( A \\), \\( B \\), \\( C \\): \\( x = A(x)(x+1) + B(x+1) + C(x^2) \\). Comparando coeficientes, obtenha \\( A = 1 \\), \\( B = -1 \\), \\( C = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{x}{x^2(x+1)} dx = \\int \\frac{1}{x} dx - \\int \\frac{1}{x^2} dx - \\int \\frac{1}{x+1} dx \\).",
+                    "Resolva as integrais: \\( \\int \\frac{1}{x} dx = \\ln|x| \\), \\( \\int \\frac{-1}{x^2} dx = \\frac{1}{x} \\), \\( \\int \\frac{-1}{x+1} dx = -\\ln|x+1| \\).",
+                    "Combine os resultados: \\( F(x) = \\ln|x| + \\frac{1}{x} - \\ln|x+1| + C \\)."
+                ],
+                "solution": "F(x) = -1/(2x²) + 1/x - ln|x+1| + C."
+            }
         ]
     },
+       
     
 
     {
@@ -581,13 +763,62 @@ const lessons = [
         "image": "imagens/imgemAula.jpg",
         "summary": "Nesta aula, exploraremos as integrais de funções racionais utilizando o método de frações parciais, focando no desenvolvimento e aplicação das fórmulas básicas de integração. Abordaremos especificamente o 3º e o 4º caso, que envolvem funções racionais com fatores quadráticos irredutíveis e suas potências. O objetivo é consolidar as técnicas já aprendidas e aplicá-las para resolver integrais mais complexas e desafiadoras, destacando a importância deste método em problemas avançados de cálculo.",
         "exercises": [
-            { "question": "∫ (x + 2)/(x² + 2x + 2) dx.", "solution": "F(x) = ln(x² + 2x + 2)/2 + C." },
-            { "question": "∫ 1/(x³ + x) dx.", "solution": "F(x) = ln|x| - ln|x² + 1|/2 + C." },
-            { "question": "∫ (2x + 3)/(x² + 4x + 5) dx.", "solution": "F(x) = ln(x² + 4x + 5)/2 + C." },
-            { "question": "∫ x/(x² + 1)² dx.", "solution": "F(x) = -1/(x² + 1) + C." },
-            { "question": "∫ 1/(x² + 4) dx.", "solution": "F(x) = (1/2) arctan(x/2) + C." }
+            {
+                "question": "∫ (x + 2)/(x² + 2x + 2) dx.",
+                "steps": [
+                    "Identifique o denominador como um fator quadrático irredutível: \\( x^2 + 2x + 2 \\).",
+                    "Reescreva o numerador para adequar-se à forma do denominador: \\( x + 2 = \\frac{1}{2}d(x^2 + 2x + 2) \\).",
+                    "Integre diretamente: \\( \\int \\frac{1}{2}d(x^2 + 2x + 2)/(x^2 + 2x + 2) = \\frac{1}{2} \\ln(x^2 + 2x + 2) + C \\).",
+                    "Solução final: \\( F(x) = \\ln(x^2 + 2x + 2)/2 + C \\)."
+                ],
+                "solution": "F(x) = ln(x² + 2x + 2)/2 + C."
+            },
+            {
+                "question": "∫ 1/(x³ + x) dx.",
+                "steps": [
+                    "Fatore o denominador: \\( x^3 + x = x(x^2 + 1) \\).",
+                    "Decomponha a fração: \\( \\frac{1}{x(x^2+1)} = \\frac{A}{x} + \\frac{Bx+C}{x^2+1} \\).",
+                    "Resolva para \\( A \\), \\( B \\), e \\( C \\): \\( 1 = A(x^2 + 1) + (Bx + C)x \\), obtendo \\( A = 1 \\), \\( B = 0 \\), \\( C = -1 \\).",
+                    "Reescreva a integral: \\( \\int \\frac{1}{x(x^2+1)} dx = \\int \\frac{1}{x} dx - \\int \\frac{1}{x^2+1} dx \\).",
+                    "Resolva as integrais: \\( \\ln|x| \\) e \\( \\arctan(x) \\).",
+                    "Solução final: \\( F(x) = \\ln|x| - \\frac{1}{2}\\ln|x^2+1| + C \\)."
+                ],
+                "solution": "F(x) = ln|x| - ln|x² + 1|/2 + C."
+            },
+            {
+                "question": "∫ (2x + 3)/(x² + 4x + 5) dx.",
+                "steps": [
+                    "Identifique o denominador como um fator quadrático irredutível: \\( x^2 + 4x + 5 \\).",
+                    "O numerador pode ser expresso diretamente como \\( 2(x + 2) \\), simplificando a integração.",
+                    "Integre diretamente usando \\( \\int \\frac{1}{u} du = \\ln|u| \\): \\( \\ln(x^2 + 4x + 5)/2 \\).",
+                    "Solução final: \\( F(x) = \\ln(x^2 + 4x + 5)/2 + C \\)."
+                ],
+                "solution": "F(x) = ln(x² + 4x + 5)/2 + C."
+            },
+            {
+                "question": "∫ x/(x² + 1)² dx.",
+                "steps": [
+                    "Faça a substituição \\( u = x^2 + 1 \\), \\( du = 2x dx \\).",
+                    "Reescreva a integral como \\( \\int \\frac{1}{u^2} du \\).",
+                    "Integre usando a fórmula \\( \\int u^{-2} du = -u^{-1} \\): \\( -1/(x^2 + 1) + C \\).",
+                    "Solução final: \\( F(x) = -1/(x^2 + 1) + C \\)."
+                ],
+                "solution": "F(x) = -1/(x² + 1) + C."
+            },
+            {
+                "question": "∫ 1/(x² + 4) dx.",
+                "steps": [
+                    "Identifique o denominador como um fator quadrático: \\( x^2 + 4 \\).",
+                    "Use a substituição \\( u = x/2 \\), \\( du = dx/2 \\).",
+                    "Reescreva a integral: \\( \\frac{1}{4} \\int \\frac{1}{u^2+1} du \\).",
+                    "Resolva usando \\( \\int \\frac{1}{1+u^2} du = \\arctan(u) \\): \\( (1/2) \\arctan(x/2) + C \\).",
+                    "Solução final: \\( F(x) = (1/2) \\arctan(x/2) + C \\)."
+                ],
+                "solution": "F(x) = (1/2) arctan(x/2) + C."
+            }
         ]
     },
+    
 
     {
         "title": "Aula 15: Comprimento de Arco e Volume de Sólido de Revolução",
@@ -596,26 +827,60 @@ const lessons = [
         "exercises": [
             { 
                 "question": "∫₁⁴ √(1 + (1/(2√x))²) dx", 
-                "solution": "L = ∫₁⁴ √(1 + (1/(2√x))²) dx = ∫₁⁴ √(1 + 1/(4x)) dx. Resolvido, L ≈ 3.478." 
+                "steps": [
+                    "A fórmula para o comprimento de arco é dada por: L = ∫ aᵇ √(1 + (f'(x))²) dx.",
+                    "Neste caso, temos a função f(x) = √x, então f'(x) = 1/(2√x).",
+                    "Substituindo na fórmula: L = ∫₁⁴ √(1 + (1/(2√x))²) dx.",
+                    "Simplificando a expressão: L = ∫₁⁴ √(1 + 1/(4x)) dx.",
+                    "Agora, resolve-se a integral numericamente: L ≈ 3.478."
+                ],
+                "solution": "L ≈ 3.478"
             },
-            { 
-                "question": "π ∫₀¹ (x²)² dx", 
-                "solution": "V = π ∫₀¹ (x²)² dx = π ∫₀¹ x⁴ dx = π[x⁵/5]₀¹ = π/5." 
+            {   
+                "question": "ovπ ∫₀¹ (x²)² dx", 
+                "steps": [
+                    "Primeiro, expandimos (x²)² para x⁴.",
+                    "A fórmula para o volume de um sólido de revolução em torno do eixo x é dada por: V = π ∫ aᵇ (f(x))² dx.",
+                    "Substituindo, temos V = π ∫₀¹ x⁴ dx.",
+                    "Agora, integramos: π ∫₀¹ x⁴ dx = π[x⁵/5]₀¹.",
+                    "Substituindo os limites de integração: V = π/5."
+                ],
+                "solution": "V = π/5"
             },
             { 
                 "question": "∫₁ᵉ √(1 + (1/x)²) dx", 
-                "solution": "L = ∫₁ᵉ √(1 + (1/x)²) dx = ∫₁ᵉ √(1 + 1/x²) dx ≈ 1.725." 
+                "steps": [
+                    "A fórmula para o comprimento de arco é L = ∫₁ᵉ √(1 + (f'(x))²) dx.",
+                    "Aqui, f(x) = 1/x, então f'(x) = -1/x².",
+                    "Substituímos na fórmula: L = ∫₁ᵉ √(1 + (1/x)²) dx.",
+                    "Agora, resolve-se a integral numericamente: L ≈ 1.725."
+                ],
+                "solution": "L ≈ 1.725"
             },
             { 
                 "question": "π ∫₀⁴ (√x)² dx", 
-                "solution": "V = π ∫₀⁴ (√x)² dx = π ∫₀⁴ x dx = π[x²/2]₀⁴ = 8π." 
+                "steps": [
+                    "Primeiro, simplificamos (√x)² para x.",
+                    "Agora, aplicamos a fórmula do volume de sólido de revolução: V = π ∫₀⁴ x dx.",
+                    "Integramos: π ∫₀⁴ x dx = π[x²/2]₀⁴.",
+                    "Substituindo os limites de integração: V = 8π."
+                ],
+                "solution": "V = 8π"
             },
             { 
-                "question": "2π ∫₀² x³x dx", 
-                "solution": "V = 2π ∫₀² x³x dx = 2π ∫₀² x⁴ dx = 2π[x⁵/5]₀² = 64π/5." 
-            }
-        ]
-    },
+                "question": "2π ∫₀² x³ dx", 
+                "steps": [
+                    "A fórmula do volume é V = 2π ∫₀² x³ dx.",
+                    "Integramos: 2π ∫₀² x³ dx = 2π[x⁴/4]₀².",
+                    "Substituímos os limites de integração: V = 8π."
+                ],
+                "solution": "V = 8π"
+            },
+
+        ],
+        
+    }
+    
     
 ];
 
@@ -627,6 +892,7 @@ const lessonImage = document.getElementById("lessonImage");
 const lessonSummary = document.getElementById("lessonSummary");
 const lessonExercises = document.getElementById("lessonExercises");
 const lessonSelect = document.getElementById("lessonSelect");
+const AplicationImage = document.getElementById("AplicationImage");
 
 function loadLessonOptions() {
     lessons.forEach((lesson, index) => {
@@ -657,7 +923,7 @@ function loadLesson(index) {
 
         return `
             <li>
-                <strong>Exercício:</strong> ${exercise.question}<br>
+                <strong>Exercício:</strong> Calcule  \\( ${exercise.question} \\)<br>
                 ${stepsHtml}
                 <strong>Resolução:</strong> A solução é \\( ${exercise.solution} \\)
             </li>
@@ -667,49 +933,6 @@ function loadLesson(index) {
     lessonSelect.value = index;
     MathJax.typeset(); // Atualiza as expressões LaTeX
 }
-
-
-// function loadLesson(index) {
-//     currentLesson = index;
-//     const lesson = lessons[index];
-//     lessonTitle.textContent = lesson.title;
-//     lessonImage.src = lesson.image;
-//     lessonSummary.textContent = lesson.summary;
-
-//     // Atualiza a lista de exercícios com LaTeX e passos
-//     lessonExercises.innerHTML = lesson.exercises.map(exercise => {
-//         let stepsHtml = '';
-//         if (exercise.steps) {
-//             stepsHtml = `
-//                 <ol>
-//                     ${exercise.steps.map(step => {
-//                         // Verifica se o step contém LaTeX
-//                         if (step.includes("\\(") && step.includes("\\)")) {
-//                             return `<li>${step}</li>`;
-//                         } else {
-//                             return `<li>${step}</li>`; // Não interpretar como LaTeX se não for
-//                         }
-//                     }).join("")}
-//                 </ol>
-//             `;
-//         }
-
-//         return `
-//             <li>
-//                 <strong>Exercício:</strong> Calcule a diferencial de \\( ${exercise.question} \\)<br>
-//                 ${stepsHtml}
-//                 <strong>Resolução:</strong> A solução é \\( ${exercise.solution} \\)
-//             </li>
-//         `;
-//     }).join(""); 
-
-//     lessonSelect.value = index;
-//     MathJax.typeset();
-// }
-
-
-
-
 
 function navigateLesson(direction) {
     const newIndex = currentLesson + direction;
